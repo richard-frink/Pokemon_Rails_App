@@ -1,0 +1,118 @@
+<%= form_for @pokemon, :html => { :class => "form-horizontal pokemon" } do |f| %>
+
+  <% if @pokemon.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@pokemon.errors.count, "error") %> prohibited this pokemon from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @pokemon.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :name, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :name, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:name) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :type1, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :type1, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:type1) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :type2, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :type2, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:type2) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :move1, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :move1, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:move1) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :move2, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :move2, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:move2) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :move3, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :move3, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:move3) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :move4, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :move4, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:move4) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :hp, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :hp, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:hp) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :attack, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :attack, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:attack) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :defense, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :defense, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:defense) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :specialAttack, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :specialAttack, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:specialAttack) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :specialDefense, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :specialDefense, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:specialDefense) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :speed, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :speed, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:speed) %>
+  </div>
+
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                pokemons_path, :class => 'btn btn-default' %>
+    </div>
+  </div>
+
+<% end %>

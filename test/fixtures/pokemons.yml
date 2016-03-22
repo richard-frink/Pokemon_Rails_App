@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  type1: MyString
+  type2: MyString
+  move1: MyText
+  move2: MyText
+  move3: MyText
+  move4: MyText
+  hp: 1
+  attack: 1
+  defense: 1
+  specialAttack: 1
+  specialDefense: 1
+  speed: 1
+
+two:
+  name: MyString
+  type1: MyString
+  type2: MyString
+  move1: MyText
+  move2: MyText
+  move3: MyText
+  move4: MyText
+  hp: 1
+  attack: 1
+  defense: 1
+  specialAttack: 1
+  specialDefense: 1
+  speed: 1

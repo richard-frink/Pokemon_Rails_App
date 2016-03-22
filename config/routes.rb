@@ -1,10 +1,14 @@
 Rails.application.routes.draw do
+
   devise_for :users
   get 'welcome/index'
 
-  resources :pokemons
-  resources :pokemons
-  resources :pokemons
+  #devise_for :users
+  #get 'welcome/index'
+
+  #resources :pokemons
+  #resources :pokemons
+  #resources :pokemons
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -59,6 +63,6 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-1
+
 
 end
