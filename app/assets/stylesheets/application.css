@@ -13,4 +13,6 @@
  *= require_tree .
  *= require_self
  *= require bootstrap_and_overrides
+ # LESS
+ *= require devise_bootstrap_views_less
  */

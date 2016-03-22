@@ -45,8 +45,11 @@ group :development do
   gem 'spring'
 end
 
+#The following are for bootstrap and less
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
 
+#Devise authentication gem related
 gem 'devise'
+gem 'devise-bootstrap-views'
