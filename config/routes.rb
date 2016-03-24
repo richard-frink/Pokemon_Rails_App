@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'pages/bag'
+
+  get 'pages/profile'
+
+  get 'pages/pokedex'
+
+  get 'pages/pokemart'
+
+  get 'pages/pokemon_team'
+
   devise_for :users
   get 'welcome/index'
 
