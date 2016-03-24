@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   get 'pages/pokemon_team'
 
+  resources :members
   devise_for :users
   get 'welcome/index'
 
