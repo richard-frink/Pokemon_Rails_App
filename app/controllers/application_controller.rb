@@ -6,9 +6,11 @@ class ApplicationController < ActionController::Base
     if user_signed_in?
       super
     else
-      redirect_to user_session_path, :notice => 'This section is available to members only! Please log in!'
-
+      redirect_to user_session_path, :notice => 'You must login to continue!'
     end
+  end
+  def after_sign_in_path_for(resource)
+    trainers_index_path # Or :prefix_to_your_route
   end
 
 end
