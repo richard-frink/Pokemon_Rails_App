@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  resources :members
+  get 'member/index'
+
   get 'pages/bag'
 
   get 'pages/profile'
@@ -13,6 +16,8 @@ Rails.application.routes.draw do
   resources :members
   devise_for :users
   get 'welcome/index'
+
+  get 'members/index'
 
   #devise_for :users
   #get 'welcome/index'
