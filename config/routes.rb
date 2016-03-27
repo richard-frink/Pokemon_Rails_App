@@ -1,8 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :members
-  get 'member/index'
-
+  #resources for member components
   get 'pages/bag'
 
   get 'pages/profile'
@@ -13,18 +11,15 @@ Rails.application.routes.draw do
 
   get 'pages/pokemon_team'
 
-  resources :members
+  #devise for users
   devise_for :users
+
+  #getter for homepage
   get 'welcome/index'
 
-  get 'members/index'
+  #resources for trainer
+  get 'trainers/index'
 
-  #devise_for :users
-  #get 'welcome/index'
-
-  #resources :pokemons
-  #resources :pokemons
-  #resources :pokemons
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

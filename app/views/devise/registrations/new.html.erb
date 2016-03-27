@@ -1,4 +1,5 @@
 <%= bootstrap_devise_error_messages! %>
+<h1><%= content_for(:title, "PokeRails | Sign Up") %></h1>
 <div class="panel panel-default devise-bs">
   <div class="panel-heading">
     <h4><%= t('.sign_up', :default => "Sign up") %></h4>
@@ -16,15 +17,45 @@
 
         <!-- avatar -->
         <div class="form-group">
+          <%= f.label :avatar %> <br/>
+          <div class="col-md-6 text-center">
           <%= f.radio_button_tag(:avatar, "trainer_male") %>
-          <%= f.label_tag(:age_child, "I am child2") %>
-          <%= f.radio_button_tag(:age, "adult") %>
-          <%= f.label_tag(:age_adult, "I'm over 21") %>
-
-
-          <%= f.label :avatar %>
-          <%= f.text_field :username, autofocus: true, class: "form-control" %>
+          <%= f.label_tag(:avatar_trainer_male, "Male Starter Trainer") %>
+          </div>
+          <div class="col-md-6 text-center">
+          <%= f.radio_button_tag(:avatar_trainer_male, "trainer_female") %>
+          <%= f.label_tag(:avatar_trainer_male, "Female Starter Trainer") %>
+          </div>
         </div>
+          <!-- Starter -->
+          <div class="form-group"> <br/>
+            <%= f.label :starter %> <br/>
+            <div class="col-md-4">
+              <%= f.radio_button_tag(:starter, "1") %>
+              <%= f.label_tag(:starter_1, "Bulbasaur") %>
+            </div>
+            <div class="col-md-4">
+              <%= f.radio_button_tag(:starter, "4") %>
+              <%= f.label_tag(:sarter_7, "Charmander") %>
+            </div>
+            <div class="col-md-4">
+              <%= f.radio_button_tag(:starter, "7") %>
+              <%= f.label_tag(:sarter_4, "Squirtle") %>
+            </div>
+
+            <div class="col-md-4">
+              <%= f.radio_button_tag(:starter, "25") %>
+              <%= f.label_tag(:starter_25, "Pikachu") %>
+            </div>
+            <div class="col-md-4">
+              <%= f.radio_button_tag(:starter, "133") %>
+              <%= f.label_tag(:sarter_133, "Eevee") %>
+            </div>
+            <div class="col-md-4">
+              <%= f.radio_button_tag(:starter, "447") %>
+              <%= f.label_tag(:sarter_447, "Riolu") %>
+            </div>
+            </div>
         <!-- End Custom Fields -->
       <div class="form-group">
         <%= f.label :email %>
