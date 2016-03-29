@@ -12,7 +12,8 @@ Rails.application.routes.draw do
   get 'pages/pokemon_team'
 
   #devise for users
-  devise_for :users
+  devise_for :users, :controllers => { registrations: 'users/registrations' }
+
 
   #getter for homepage
   get 'welcome/index'
