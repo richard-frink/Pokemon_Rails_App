@@ -12,7 +12,12 @@ Rails.application.routes.draw do
   get 'pages/pokemon_team'
 
   #devise for users
-  devise_for :users, :controllers => { registrations: 'users/registrations' }
+
+  # The code below this comment was breaking my login process
+  #devise_for :users, :controllers => { registrations: 'users/registrations' }
+
+  #This code fixes the break
+  devise_for :users
 
 
   #getter for homepage
