@@ -15,6 +15,11 @@
           <%= f.text_field :username, autofocus: true, class: "form-control" %>
         </div>
 
+
+        <!-- ********* i think you are missing the "class: form-control" for the radio buttons maybe? -->
+        <!-- ********* something like that may be why the starters when signing up are not processing correctly -->
+
+
         <!-- avatar -->
         <div class="form-group">
           <%= f.label :avatar %> <br/>
@@ -51,11 +56,7 @@
               <%= f.radio_button_tag(:starter, "133") %>
               <%= f.label_tag(:starter_133, "Eevee") %>
             </div>
-            <div class="col-md-4">
-              <%= f.radio_button_tag(:starter, "447") %>
-              <%= f.label_tag(:starter_447, "Riolu") %>
-            </div>
-            </div>
+          </div>
         <!-- End Custom Fields -->
       <div class="form-group">
         <%= f.label :email %>
