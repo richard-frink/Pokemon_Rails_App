@@ -15,10 +15,10 @@ Rails.application.routes.draw do
   #devise for users
 
   # The code below this comment was breaking my login process
-  #devise_for :users, :controllers => { registrations: 'users/registrations' }
+  devise_for :users, :controllers => { registrations: 'users/registrations' }
 
   #This code fixes the break
-  devise_for :users
+  #devise_for :users
 
 
   #getter for homepage

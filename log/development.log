@@ -26497,3 +26497,1666 @@ Processing by PagesController#pokemart as HTML
   [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
   Rendered pages/pokemart.html.erb within layouts/application (10.7ms)
 Completed 200 OK in 79ms (Views: 76.5ms | ActiveRecord: 0.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-04-03 23:53:33 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2Qihl/pPdM+t3SWaJFoQ2xuBvMGJhejU2taFxOaM3cUjiK1qX3lT6075VTLwaSZe9CoTapsbs4MSxUoRPINhNQ=="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 18]]
+Redirected to http://localhost:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 107ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-03 23:53:33 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 3538ms (Views: 3536.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-04-03 23:53:39 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (13.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (60.2ms)
+Completed 200 OK in 161ms (Views: 132.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-04-03 23:53:52 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bmod1KBSLyFOxoRcbJit6MqoM9obaMPuetMhHCrR4HmU6hEpBWQIBa3i9PS4q5ttJQOccQn2mLmywO7J8N5ciQ==", "user"=>{"username"=>"rsussan", "money"=>"3000", "email"=>"rsussan@live.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "avatar"=>"trainer_male", "starter"=>"133", "commit"=>"Sign up"}
+Unpermitted parameters: username, money
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'rsussan@live.com' LIMIT 1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "rsussan@live.com"], ["encrypted_password", "$2a$10$zYDTV8YXCq262vaDm99pW.dt7E43glgqs0G00pKvjOz.0j/IxbUVy"], ["created_at", "2016-04-04 03:53:52.495836"], ["updated_at", "2016-04-04 03:53:52.495836"]]
+  [1m[35m (18.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2016-04-04 03:53:52.519281"], ["current_sign_in_at", "2016-04-04 03:53:52.519281"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2016-04-04 03:53:52.521008"], ["id", 19]]
+  [1m[36m (10.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trainers/index
+Completed 302 Found in 221ms (ActiveRecord: 31.6ms)
+
+
+Started GET "/trainers/index" for ::1 at 2016-04-03 23:53:52 -0400
+Processing by TrainersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 19]]
+  Rendered trainers/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 85ms (Views: 82.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pages/pokemart" for ::1 at 2016-04-03 23:53:55 -0400
+Processing by PagesController#pokemart as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 19]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered pages/pokemart.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 97ms (Views: 91.6ms | ActiveRecord: 0.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-04-03 23:57:49 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q33+ROsIQEWJCJIcU7su4N0zjmYRvD3IJ3a9M95W8r65/fK5Tj5nYWos4rSHiBhlMpghzQMiZp/vZXLmBFlOTg=="}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 19]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 140ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for ::1 at 2016-04-03 23:57:49 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 721ms (Views: 719.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-04-03 23:57:58 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (15.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (53.6ms)
+Completed 200 OK in 124ms (Views: 123.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-04-03 23:58:12 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Jb8gAmrEE/lhZIuLK/iOacJe/9ZT5iwLJbHq8p2JwI4sXYM5uUAtEvWoMTBFcVvlWpApXplS5PlRYn47HVEUew==", "user"=>{"username"=>"rsussan", "money"=>"3000", "email"=>"rsussan@live.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "avatar"=>"trainer_male", "starter"=>"4", "commit"=>"Sign up"}
+Unpermitted parameters: username, money
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'rsussan@live.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "rsussan@live.com"], ["encrypted_password", "$2a$10$6z2cKeH1xVMEJJ4x36mXnOYPn2SUyba6Nz93f/JE7uVPomPUl3f02"], ["created_at", "2016-04-04 03:58:12.527283"], ["updated_at", "2016-04-04 03:58:12.527283"]]
+  [1m[35m (8.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2016-04-04 03:58:12.538868"], ["current_sign_in_at", "2016-04-04 03:58:12.538868"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2016-04-04 03:58:12.539946"], ["id", 20]]
+  [1m[36m (20.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trainers/index
+Completed 302 Found in 229ms (ActiveRecord: 30.6ms)
+
+
+Started GET "/trainers/index" for ::1 at 2016-04-03 23:58:12 -0400
+Processing by TrainersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 20]]
+  Rendered trainers/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 77ms (Views: 74.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pages/pokemart" for ::1 at 2016-04-03 23:58:14 -0400
+Processing by PagesController#pokemart as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 20]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered pages/pokemart.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 101ms (Views: 97.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-04-03 23:58:27 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 20]]
+Completed 200 OK in 76ms (Views: 74.8ms | ActiveRecord: 0.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/pages/pokemart" for ::1 at 2016-04-04 00:01:03 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#pokemart as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 20]]
+  Rendered pages/pokemart.html.erb within layouts/application (29.1ms)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 0.9ms)
+
+ActionView::Template::Error (undefined method `money' for nil:NilClass):
+    4: <hr>
+    5: 
+    6: 
+    7: <p>Your funds: <%= "#{current_user.money}" %></p>
+    8: <hr>
+    9: 
+   10: <!--
+  app/views/pages/pokemart.html.erb:7:in `_app_views_pages_pokemart_html_erb__2765394195144635973_69923757619960'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.0ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (85.1ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (124.7ms)
+
+
+Started GET "/pages/pokemart" for ::1 at 2016-04-04 00:01:04 -0400
+Processing by PagesController#pokemart as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 20]]
+  Rendered pages/pokemart.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (undefined method `money' for nil:NilClass):
+    4: <hr>
+    5: 
+    6: 
+    7: <p>Your funds: <%= "#{current_user.money}" %></p>
+    8: <hr>
+    9: 
+   10: <!--
+  app/views/pages/pokemart.html.erb:7:in `_app_views_pages_pokemart_html_erb__2765394195144635973_69923746311400'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (42.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (66.8ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-04-04 00:01:10 -0400
+Processing by Devise::RegistrationsController#edit as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  app/controllers/application_controller.rb:6:in `authenticate_user!'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.3ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (25.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (51.9ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-04-04 00:01:10 -0400
+Processing by Devise::RegistrationsController#edit as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  app/controllers/application_controller.rb:6:in `authenticate_user!'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.2ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (27.9ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (55.2ms)
+
+
+Started GET "/pages/bag" for ::1 at 2016-04-04 00:01:14 -0400
+Processing by PagesController#bag as HTML
+  Rendered pages/bag.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 20]]
+Completed 200 OK in 568ms (Views: 567.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/pokemart" for ::1 at 2016-04-04 00:01:23 -0400
+Processing by PagesController#pokemart as HTML
+  Rendered pages/pokemart.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `money' for nil:NilClass):
+    4: <hr>
+    5: 
+    6: 
+    7: <p>Your funds: <%= "#{current_user.money}" %></p>
+    8: <hr>
+    9: 
+   10: <!--
+  app/views/pages/pokemart.html.erb:7:in `_app_views_pages_pokemart_html_erb__2765394195144635973_69923757619960'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (27.1ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (55.6ms)
+
+
+Started GET "/pages/pokemart" for ::1 at 2016-04-04 00:01:24 -0400
+Processing by PagesController#pokemart as HTML
+  Rendered pages/pokemart.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `money' for nil:NilClass):
+    4: <hr>
+    5: 
+    6: 
+    7: <p>Your funds: <%= "#{current_user.money}" %></p>
+    8: <hr>
+    9: 
+   10: <!--
+  app/views/pages/pokemart.html.erb:7:in `_app_views_pages_pokemart_html_erb__2765394195144635973_69923746311400'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.1ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (26.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (53.6ms)
+
+
+Started GET "/" for ::1 at 2016-04-04 00:01:27 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 77ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/scaffolds.self-bdca8b9c113dc64679076ec0fa43b7a9c2129b5ad35bda6777465cf7435fd2ca.css?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/trainers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/application.self-debd47dc4e83a7fbff270ac5300950810ed7ff7130c2e50fda9a0b9a03a70734.css?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/devise_bootstrap_views_less.self-fbcfc84ffe8c2506067c12062881f41b61ab2575ddcb141e45e30c1e11f0ffe9.css?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/assets/trainers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:01:28 -0400
+
+
+Started GET "/users/sign_up" for ::1 at 2016-04-04 00:01:31 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (15.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (48.6ms)
+Completed 200 OK in 134ms (Views: 118.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-04-04 00:01:48 -0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Uc9T0RYXJocDIEqHmsYIA1nO/KPJVjBs4IELSQXPCUpYLfDqxZMYbJfs8Dz0T92PwQAqKwPi+J6UUp+AhRfdvw==", "user"=>{"username"=>"rsussan", "money"=>"3000", "email"=>"rsussan@live.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "avatar"=>"trainer_male", "starter"=>"25", "commit"=>"Sign up"}
+Unpermitted parameters: username, money
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'rsussan@live.com' LIMIT 1
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "rsussan@live.com"], ["encrypted_password", "$2a$10$SpaUp6eFI8DYXEvsZuJyCeUxbssgDHKoboy2sEgwEzHVJC/KEOpTa"], ["created_at", "2016-04-04 04:01:49.178515"], ["updated_at", "2016-04-04 04:01:49.178515"]]
+  [1m[35m (13.2ms)[0m  commit transaction
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2016-04-04 04:01:49.196363"], ["current_sign_in_at", "2016-04-04 04:01:49.196363"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2016-04-04 04:01:49.200547"], ["id", 21]]
+  [1m[36m (19.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trainers/index
+Completed 302 Found in 234ms (ActiveRecord: 35.7ms)
+
+
+Started GET "/trainers/index" for ::1 at 2016-04-04 00:01:49 -0400
+Processing by TrainersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 21]]
+  Rendered trainers/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 82ms (Views: 79.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/pokemart" for ::1 at 2016-04-04 00:01:51 -0400
+Processing by PagesController#pokemart as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 21]]
+  [1m[35mItem Load (0.7ms)[0m  SELECT "items".* FROM "items"
+  Rendered pages/pokemart.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 89ms (Views: 87.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2016-04-04 00:04:38 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 21]]
+Completed 200 OK in 105ms (Views: 102.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2016-04-04 00:05:14 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 21]]
+Completed 200 OK in 160ms (Views: 159.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/scaffolds.self-2586737c59c05c257ce96be049c062a23cc7c5d49c1f5cec55111d34a62e8798.css?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/devise_bootstrap_views_less.self-fbcfc84ffe8c2506067c12062881f41b61ab2575ddcb141e45e30c1e11f0ffe9.css?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/trainers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/application.self-debd47dc4e83a7fbff270ac5300950810ed7ff7130c2e50fda9a0b9a03a70734.css?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/trainers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-04 00:05:14 -0400
+
+
+Started GET "/" for ::1 at 2016-04-04 00:05:16 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 21]]
+Completed 200 OK in 74ms (Views: 73.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-04 00:05:19 -0400
+Processing by PagesController#pokedex as HTML
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `before_action' for #<PagesController:0x007f30a8098de8>):
+  app/controllers/pages_controller.rb:11:in `pokedex'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.3ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.9ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.0ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (57.1ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-04 00:05:19 -0400
+Processing by PagesController#pokedex as HTML
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `before_action' for #<PagesController:0x007f30a049c258>):
+  app/controllers/pages_controller.rb:11:in `pokedex'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.8ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (29.9ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (60.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-04 00:05:23 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 21]]
+Completed 200 OK in 85ms (Views: 83.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/scaffolds.self-2586737c59c05c257ce96be049c062a23cc7c5d49c1f5cec55111d34a62e8798.css?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/trainers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/devise_bootstrap_views_less.self-fbcfc84ffe8c2506067c12062881f41b61ab2575ddcb141e45e30c1e11f0ffe9.css?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/application.self-debd47dc4e83a7fbff270ac5300950810ed7ff7130c2e50fda9a0b9a03a70734.css?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/trainers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-04 00:05:23 -0400
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-04 00:05:25 -0400
+Processing by PagesController#pokedex as HTML
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `before_action' for #<PagesController:0x007f30a10cd748>):
+  app/controllers/pages_controller.rb:11:in `pokedex'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.1ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (25.9ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (52.0ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-04 00:05:26 -0400
+Processing by PagesController#pokedex as HTML
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `before_action' for #<PagesController:0x007f30a80d61e8>):
+  app/controllers/pages_controller.rb:11:in `pokedex'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.3ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.1ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (57.3ms)
+
+
+Started GET "/pages/pokemart" for ::1 at 2016-04-04 00:06:45 -0400
+Processing by PagesController#pokemart as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 21]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered pages/pokemart.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 119ms (Views: 112.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-04 00:06:47 -0400
+Processing by PagesController#pokedex as HTML
+  Rendered pages/pokedex.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 21]]
+Completed 200 OK in 75ms (Views: 71.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pages/pokemon_team" for ::1 at 2016-04-04 00:06:48 -0400
+Processing by PagesController#pokemon_team as HTML
+  Rendered pages/pokemon_team.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 21]]
+Completed 200 OK in 73ms (Views: 71.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-04-04 00:06:50 -0400
+Processing by Devise::RegistrationsController#edit as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  app/controllers/application_controller.rb:6:in `authenticate_user!'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (30.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (65.5ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-04-04 00:06:50 -0400
+Processing by Devise::RegistrationsController#edit as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  app/controllers/application_controller.rb:6:in `authenticate_user!'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (27.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (56.2ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-04-04 00:14:10 -0400
+Processing by Devise::RegistrationsController#edit as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  app/controllers/application_controller.rb:6:in `authenticate_user!'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (33.3ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (67.8ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-04-04 00:14:10 -0400
+Processing by Devise::RegistrationsController#edit as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  app/controllers/application_controller.rb:6:in `authenticate_user!'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (27.8ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (57.9ms)
+
+
+Started GET "/pages/pokemart" for ::1 at 2016-04-04 00:17:36 -0400
+Processing by PagesController#pokemart as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 21]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered pages/pokemart.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 177ms (Views: 171.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/pages/pokemart" for ::1 at 2016-04-04 00:17:36 -0400
+Processing by PagesController#pokemart as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 21]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered pages/pokemart.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 72ms (Views: 71.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/pages/pokemart" for ::1 at 2016-04-04 00:19:11 -0400
+Processing by PagesController#pokemart as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UW1es0KekuqyxdZFMd8vr+ratUOs6FZ2LcM6nKuzjMFYj/2IkRqsASYJbP5fVvojchRjy2ZcnoRZEK5VK2tYNA==", "Potion"=>"2", "commit"=>"Buy", "Super Potion"=>"", "Hyper Potion"=>"", "Max Potion"=>"", "Poke Ball"=>"", "Great Ball"=>"", "Ultra Ball"=>"", "Master Ball"=>"", "Leaf Stone"=>"", "Water Stone"=>"", "Thunder Stone"=>"", "Fire Stone"=>"", "Moon Stone"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 21]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"
+  Rendered pages/pokemart.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 99ms (Views: 97.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/bag" for ::1 at 2016-04-04 00:23:25 -0400
+Processing by PagesController#bag as HTML
+  Rendered pages/bag.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 21]]
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (No route matches {:action=>"account_update_params", :controller=>"registrations_controller"}):
+    49:             <li class="dropdown">
+    50:               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= "#{current_user.username}" %><span class="caret"></span></a>
+    51:               <ul class="dropdown-menu">
+    52:                <li><%= link_to "Profile", :controller=>"registrations_controller", :action => :account_update_params %></li>
+    53:                 <li role="separator" class="divider"></li>
+    54:                 <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+    55:               </ul>
+  app/views/layouts/application.html.erb:52:in `_app_views_layouts_application_html_erb__1959306161399691772_69923376297000'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (32.3ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (69.6ms)
+
+
+Started GET "/pages/bag" for ::1 at 2016-04-04 00:26:21 -0400
+Processing by PagesController#bag as HTML
+  Rendered pages/bag.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 21]]
+Completed 200 OK in 80ms (Views: 78.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/scaffolds.self-bdca8b9c113dc64679076ec0fa43b7a9c2129b5ad35bda6777465cf7435fd2ca.css?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/trainers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/application.self-debd47dc4e83a7fbff270ac5300950810ed7ff7130c2e50fda9a0b9a03a70734.css?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/devise_bootstrap_views_less.self-fbcfc84ffe8c2506067c12062881f41b61ab2575ddcb141e45e30c1e11f0ffe9.css?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/trainers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-04 00:26:22 -0400
+
+
+Started GET "/pages/pokemart" for ::1 at 2016-04-04 00:26:25 -0400
+Processing by PagesController#pokemart as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 21]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered pages/pokemart.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 73ms (Views: 72.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-04-04 00:26:26 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 21]]
+Completed 200 OK in 72ms (Views: 71.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-04-04 00:28:28 -0400
+Processing by Devise::RegistrationsController#edit as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  app/controllers/application_controller.rb:6:in `authenticate_user!'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (26.0ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (53.2ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-04-04 00:28:28 -0400
+Processing by Devise::RegistrationsController#edit as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  app/controllers/application_controller.rb:6:in `authenticate_user!'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (27.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (55.9ms)
+
+
+Started GET "/" for ::1 at 2016-04-04 00:29:01 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 21]]
+Completed 200 OK in 93ms (Views: 90.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2016-04-04 00:29:01 -0400
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:29:01 -0400
+
+
+Started GET "/assets/trainers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:29:01 -0400
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:29:01 -0400
+
+
+Started GET "/assets/scaffolds.self-bdca8b9c113dc64679076ec0fa43b7a9c2129b5ad35bda6777465cf7435fd2ca.css?body=1" for ::1 at 2016-04-04 00:29:01 -0400
+
+
+Started GET "/assets/application.self-debd47dc4e83a7fbff270ac5300950810ed7ff7130c2e50fda9a0b9a03a70734.css?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/devise_bootstrap_views_less.self-fbcfc84ffe8c2506067c12062881f41b61ab2575ddcb141e45e30c1e11f0ffe9.css?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/trainers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-04 00:29:02 -0400
+
+
+Started GET "/pages/pokemart" for ::1 at 2016-04-04 00:29:03 -0400
+Processing by PagesController#pokemart as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 21]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered pages/pokemart.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 94ms (Views: 89.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-04-04 00:29:05 -0400
+Processing by Users::RegistrationsController#edit as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  app/controllers/application_controller.rb:6:in `authenticate_user!'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.3ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (26.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (53.3ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-04-04 00:29:06 -0400
+Processing by Users::RegistrationsController#edit as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  app/controllers/application_controller.rb:6:in `authenticate_user!'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.2ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (30.0ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (59.8ms)
+
+
+Started GET "/pages/pokemart" for ::1 at 2016-04-04 00:29:09 -0400
+Processing by PagesController#pokemart as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 21]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered pages/pokemart.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 88ms (Views: 86.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/scaffolds.self-bdca8b9c113dc64679076ec0fa43b7a9c2129b5ad35bda6777465cf7435fd2ca.css?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/trainers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/application.self-debd47dc4e83a7fbff270ac5300950810ed7ff7130c2e50fda9a0b9a03a70734.css?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/devise_bootstrap_views_less.self-fbcfc84ffe8c2506067c12062881f41b61ab2575ddcb141e45e30c1e11f0ffe9.css?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/trainers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-04 00:29:09 -0400
+
+
+Started GET "/pages/pokemart" for ::1 at 2016-04-04 00:29:22 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#pokemart as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 21]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered pages/pokemart.html.erb within layouts/application (41.4ms)
+Completed 200 OK in 720ms (Views: 703.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2016-04-04 00:29:24 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 21]]
+Completed 200 OK in 75ms (Views: 74.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-04 00:29:26 -0400
+Processing by PagesController#pokedex as HTML
+  Rendered pages/pokedex.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 21]]
+Completed 200 OK in 70ms (Views: 65.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pages/bag" for ::1 at 2016-04-04 00:29:27 -0400
+Processing by PagesController#bag as HTML
+  Rendered pages/bag.html.erb within layouts/application (1.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 21]]
+Completed 200 OK in 120ms (Views: 119.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-04-04 00:29:28 -0400
+Processing by Users::RegistrationsController#edit as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  app/controllers/application_controller.rb:6:in `authenticate_user!'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.2ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (84.1ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (122.4ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-04-04 00:29:29 -0400
+Processing by Users::RegistrationsController#edit as HTML
+Completed 500 Internal Server Error in 0ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  app/controllers/application_controller.rb:6:in `authenticate_user!'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.0ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (56.5ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-04-04 00:29:45 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dMHzwlNguSav7rlL74mtTA6+1cUhf2wapwFiQrhfXdZ9I1D5gOSHzTsiA/CBAHjAlnADTevLpOjT0vaLOIeJIw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 21]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-04-04 00:29:45 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 96ms (Views: 95.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-04-04 00:29:47 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (17.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (56.8ms)
+Completed 200 OK in 143ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-04-04 00:29:52 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dfLNMMCyhJZ84x7GL1MzV9MMvZ8uwtyMynSbJ9Lp/yUhHrRGVJfBzftyyFgxRTXrI4CsuEpek1ousLJw4Kj8CA==", "user"=>{"email"=>"rsussan@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "rsussan@live.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["current_sign_in_at", "2016-04-04 04:29:52.285435"], ["sign_in_count", 2], ["updated_at", "2016-04-04 04:29:52.286664"], ["id", 21]]
+  [1m[36m (17.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trainers/index
+Completed 302 Found in 210ms (ActiveRecord: 19.9ms)
+
+
+Started GET "/trainers/index" for ::1 at 2016-04-04 00:29:52 -0400
+Processing by TrainersController#index as HTML
+  Rendered trainers/index.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 21]]
+Completed 200 OK in 82ms (Views: 79.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-04-04 00:29:55 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SYajHR2qy2PjiELJaGXf6iRpellEsbvh87KBYbRM6nKZRfmvUMpt1VWYJzm8dLqLReeDycGQP0UOtlE+XLHnZQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 21]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2016-04-04 00:29:55 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 80ms (Views: 78.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-04-04 00:29:57 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 84ms (Views: 82.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-04-04 00:30:00 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (11.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 140ms (Views: 138.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-04-04 00:30:20 -0400
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bstJw4kqkVvympZEpZ1VsUINoyEOHvvVhyd5hBIwgR6e0vP0qWAL5ijY12V+g5bNCvmA+jtjtniwwAI8Yxo2WA==", "user"=>{"username"=>"random", "money"=>"3000", "email"=>"asdf@asdf.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "avatar"=>"trainer_female", "starter"=>"7", "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'asdf@asdf.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("username", "email", "encrypted_password", "money", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["username", "random"], ["email", "asdf@asdf.com"], ["encrypted_password", "$2a$10$FFGc0kwLth3iAgKR5L9sfOGTZmJYlVCnyacoukPEZ8/FeWvVhdtVG"], ["money", 3000], ["created_at", "2016-04-04 04:30:20.918078"], ["updated_at", "2016-04-04 04:30:20.918078"]]
+  [1m[36m (16.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2016-04-04 04:30:20.942885"], ["current_sign_in_at", "2016-04-04 04:30:20.942885"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2016-04-04 04:30:20.944543"], ["id", 22]]
+  [1m[35m (17.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/trainers/index
+Completed 302 Found in 209ms (ActiveRecord: 35.5ms)
+
+
+Started GET "/trainers/index" for ::1 at 2016-04-04 00:30:20 -0400
+Processing by TrainersController#index as HTML
+  Rendered trainers/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 22]]
+Completed 200 OK in 78ms (Views: 76.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-04-04 00:30:24 -0400
+Processing by Users::RegistrationsController#edit as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  app/controllers/application_controller.rb:6:in `authenticate_user!'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (26.9ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (54.1ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-04-04 00:30:24 -0400
+Processing by Users::RegistrationsController#edit as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  app/controllers/application_controller.rb:6:in `authenticate_user!'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (29.3ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (56.3ms)
+
+
+Started GET "/pages/pokemart" for ::1 at 2016-04-04 00:30:33 -0400
+Processing by PagesController#pokemart as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 22]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered pages/pokemart.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 69ms (Views: 67.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/bag" for ::1 at 2016-04-04 00:30:38 -0400
+Processing by PagesController#bag as HTML
+  Rendered pages/bag.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 22]]
+Completed 200 OK in 72ms (Views: 71.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pages/pokemart" for ::1 at 2016-04-04 00:30:39 -0400
+Processing by PagesController#pokemart as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 22]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered pages/pokemart.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 99ms (Views: 97.9ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-04-04 00:30:41 -0400
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Qb1foX39YPhezLTd3TepxJsElHU94o07D9rdsITncjixpOWWXbf6RYSO9fwGKWq40/C3rgifwJY4PaYI9c3Ffg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 22]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-04-04 00:30:41 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 82ms (Views: 81.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-04-04 00:30:59 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 100ms (Views: 99.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-04-04 00:31:13 -0400
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tg6fca7VD4apzwj7oWGvfAgMQVmK7Um8fNDWAeW2jez0zi+p7KeayJpu/CMvmups3ETSPZNsqJDXGk9rfHMZCg==", "user"=>{"username"=>"rsussan", "money"=>"3000", "email"=>"rsussan@live.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "avatar"=>"trainer_male", "starter"=>"133", "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'rsussan@live.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered devise/shared/_links.html.erb (6.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 233ms (Views: 90.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for ::1 at 2016-04-04 00:31:22 -0400
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aA8HoqcU+xKS04UrLvxdmIIzUpk9DS/4H12l1ykzn6Mqz7d65WZuXKFycfOgBxiIVnvB/SSMztS0lzy9sPYLRQ==", "user"=>{"username"=>"rsussan", "money"=>"3000", "email"=>"rsussan@live.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "avatar"=>"trainer_male", "starter"=>"133", "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'rsussan@live.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("username", "email", "encrypted_password", "money", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["username", "rsussan"], ["email", "rsussan@live.com"], ["encrypted_password", "$2a$10$DyDoQ3ysZ0BDoeiKbCeDm.lTw88sgGptNzv5k8OjN7O8QSGSSTmNq"], ["money", 3000], ["created_at", "2016-04-04 04:31:22.254014"], ["updated_at", "2016-04-04 04:31:22.254014"]]
+  [1m[35m (78.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2016-04-04 04:31:22.336077"], ["current_sign_in_at", "2016-04-04 04:31:22.336077"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2016-04-04 04:31:22.337484"], ["id", 23]]
+  [1m[36m (20.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trainers/index
+Completed 302 Found in 251ms (ActiveRecord: 100.0ms)
+
+
+Started GET "/trainers/index" for ::1 at 2016-04-04 00:31:22 -0400
+Processing by TrainersController#index as HTML
+  Rendered trainers/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 23]]
+Completed 200 OK in 84ms (Views: 83.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/pokemart" for ::1 at 2016-04-04 00:31:24 -0400
+Processing by PagesController#pokemart as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 23]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered pages/pokemart.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 77ms (Views: 75.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/pages/pokemart" for ::1 at 2016-04-04 00:31:29 -0400
+Processing by PagesController#pokemart as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AbfzpF0FQHIGieFMZDYR94UiKDE/FoDCoCat4wVAsRRDd0N8H3fVPDUoFZTqzVTnUWq7VSaXYe4L7DSJnIUl8g==", "Potion"=>"1", "commit"=>"Buy", "Super Potion"=>"", "Hyper Potion"=>"", "Max Potion"=>"", "Poke Ball"=>"", "Great Ball"=>"", "Ultra Ball"=>"", "Master Ball"=>"", "Leaf Stone"=>"", "Water Stone"=>"", "Thunder Stone"=>"", "Fire Stone"=>"", "Moon Stone"=>""}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 23]]
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items"
+  Rendered pages/pokemart.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 95ms (Views: 91.9ms | ActiveRecord: 0.7ms)
