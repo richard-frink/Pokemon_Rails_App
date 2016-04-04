@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'pages/pokedex'
 
   get 'pages/pokemart'
+  post 'pages/pokemart'
 
   get 'pages/pokemon_team'
 

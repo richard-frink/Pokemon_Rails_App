@@ -1,21 +1,22 @@
 <%- model_class_item = Item -%>
-
+<head><title>Pokemart</title></head>
 <h1>Pokemart</h1>
 <hr>
 
-<!--
-<p>Your funds: #{current_user.money}</p>
+
+<p>Your funds: <%= "#{current_user.money}" %></p>
 <hr>
--->
 
 <!--
-    Make a form (text field) for the quantity of a given item wanted by the user
-    Have the number input validated first and then passed to be added to the user';s list of current items they have
+    !DONE!  Make a form (text field) for the quantity of a given item wanted by the user
+    Have the number input validated first
+    and then passed to be added to the user's list of current items they have
 -->
 
-<h3>Medicine</h3>
-<hr>
-<table class="table table-striped">
+<%= form_tag(:action => "pokemart")  do %>
+
+<h2>Medicine</h2>
+<table>
   <thead>
     <tr>
       <th><b>Name</b></th>
@@ -31,8 +32,8 @@
           <td><%= item.name %></td>
           <td><%= item.price %></td>
           <td><%= item.item_type %></td>
-          <td>input text field</td>
-          <td>Buy Button</td>
+          <td><%= text_field_tag(item.name, "") %></td>
+          <td><%= submit_tag("Buy") %></td>
         </tr>
       <% end %>
     <% end %>
@@ -40,11 +41,9 @@
 </table>
 
 
-
 <hr>
-<h3>Pokeballs</h3>
-<hr>
-<table class="table table-striped">
+<h2>Pokeballs</h2>
+<table>
   <thead>
     <tr>
       <th><b>Name</b></th>
@@ -60,18 +59,18 @@
           <td><%= item.name %></td>
           <td><%= item.price %></td>
           <td><%= item.item_type %></td>
-          <td>input text field</td>
-          <td>Buy Button</td>
+          <td><%= text_field_tag(item.name, "") %></td>
+          <td><%= submit_tag("Buy") %></td>
         </tr>
       <% end %>
     <% end %>
   </tbody>
 </table>
 
+
 <hr>
-<h3>Evolution Stones</h3>
-<hr>
-<table class="table table-striped">
+<h2>Evolution Stones</h2>
+<table>
   <thead>
     <tr>
       <th><b>Name</b></th>
@@ -87,10 +86,11 @@
           <td><%= item.name %></td>
           <td><%= item.price %></td>
           <td>Evolution Stone</td>
-          <td>input text field</td>
-          <td>Buy Button</td>
+          <td><%= text_field_tag(item.name, "") %></td>
+          <td><%= submit_tag("Buy") %></td>
         </tr>
       <% end %>
     <% end %>
   </tbody>
 </table>
+<% end %>

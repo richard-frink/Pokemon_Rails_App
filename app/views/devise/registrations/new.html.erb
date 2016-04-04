@@ -15,10 +15,10 @@
           <%= f.text_field :username, autofocus: true, class: "form-control" %>
         </div>
 
-
-        <!-- ********* i think you are missing the "class: form-control" for the radio buttons maybe? -->
-        <!-- ********* something like that may be why the starters when signing up are not processing correctly -->
-
+        <!-- money, defaults to 3000 through a hidden field -->
+        <div class="form-group">
+          <%= f.hidden_field :money, :value => 3000 %>
+        </div>
 
         <!-- avatar -->
         <div class="form-group">
@@ -27,6 +27,7 @@
           <%= f.radio_button_tag(:avatar, "trainer_male") %>
           <%= f.label_tag(:avatar_trainer_male, "Male Starter Trainer") %>
           </div>
+
           <div class="col-md-6 text-center">
           <%= f.radio_button_tag(:avatar, "trainer_female") %>
           <%= f.label_tag(:avatar_trainer_female, "Female Starter Trainer") %>
@@ -39,10 +40,12 @@
               <%= f.radio_button_tag(:starter, "1") %>
               <%= f.label_tag(:starter_1, "Bulbasaur") %>
             </div>
+
             <div class="col-md-4">
               <%= f.radio_button_tag(:starter, "4") %>
               <%= f.label_tag(:starter_7, "Charmander") %>
             </div>
+
             <div class="col-md-4">
               <%= f.radio_button_tag(:starter, "7") %>
               <%= f.label_tag(:starter_4, "Squirtle") %>
@@ -52,7 +55,8 @@
               <%= f.radio_button_tag(:starter, "25") %>
               <%= f.label_tag(:starter_25, "Pikachu") %>
             </div>
-            <div class="col-md-4">
+
+            <div class="col-md-8">
               <%= f.radio_button_tag(:starter, "133") %>
               <%= f.label_tag(:starter_133, "Eevee") %>
             </div>
