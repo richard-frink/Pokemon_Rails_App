@@ -1,2 +1,29 @@
-<h1>Pages#pokedex</h1>
-<p>Find me in app/views/pages/pokedex.html.erb</p>
+<%- model_class_pokemon = Pokemon -%>
+<head><title>Pokedex</title></head>
+<h1>Pokedex</h1>
+<hr>
+
+<table>
+  <thead>
+  <tr>
+    <th><b>ID</b></th>
+    <th colspan="3"><b>Name</b></th>
+    <th><b>Normal</b></th>
+    <th><b>Shiny</b></th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @pokemons.each do |mon| %>
+    <tr>
+      <td><%= mon.id %></td>
+      <td colspan="3"><%= link_to mon.name, pages_pokemon_path(:pokemon_id => mon.id) %></td>
+      <!--
+        this will check with the user and see if they have caught a pokemon
+        that is of this id and whethet they have caught a normal and or shiny version
+        -->
+      <td>pokeball_image</td>
+      <td>pokeball_image</td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

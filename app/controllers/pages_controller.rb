@@ -18,6 +18,10 @@ class PagesController < ApplicationController
 
   end
 
+  def pokemon
+    @pokemon = Pokemon.find(params[:pokemon_id])
+  end
+
   def pokemon_team
   end
 end

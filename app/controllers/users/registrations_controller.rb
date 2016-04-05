@@ -1,5 +1,5 @@
 class Users::RegistrationsController < Devise::RegistrationsController
-  #before_filter :configure_permitted_parameters, :only => [:create]
+  before_filter :authenticate_user!
 
   private
 

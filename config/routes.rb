@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
   get 'pages/pokemon_team'
 
+  get 'pages/pokemon'
+
   #devise for users
 
   # The code below this comment was breaking my login process
