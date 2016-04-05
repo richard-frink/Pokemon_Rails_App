@@ -32,7 +32,6 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Explore<span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><%= link_to "Pokemart", :controller=>"pages", :action => :pokemart %></li>
-                <li><%= link_to "Pokedex", :controller=>"pages", :action => :pokedex %></li>
               </ul>
             </li>
 
@@ -42,6 +41,7 @@
                 <ul class="dropdown-menu">
                   <li><%= link_to "My Bag", :controller=>"pages", :action => :bag %></li>
                   <li><%= link_to "Pokemon Team", :controller=>"pages", :action => :pokemon_team %></li>
+                  <li><%= link_to "Pokedex", :controller=>"pages", :action => :pokedex %></li>
                 </ul>
               </li>
 
@@ -49,7 +49,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><%= "#{current_user.username}" %><span class="caret"></span></a>
               <ul class="dropdown-menu">
-               <li><%= link_to "Profile", edit_user_registration_path %></li>
+               <li><%= link_to "Profile", :controller=>"trainers", :action => :edit %></li>
                 <li role="separator" class="divider"></li>
                 <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
               </ul>

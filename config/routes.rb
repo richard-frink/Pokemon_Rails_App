@@ -15,12 +15,7 @@ Rails.application.routes.draw do
   get 'pages/pokemon'
 
   #devise for users
-
-  # The code below this comment was breaking my login process
   devise_for :users, :controllers => { registrations: 'users/registrations' }
-
-  #This code fixes the break
-  #devise_for :users
 
 
   #getter for homepage
@@ -28,6 +23,8 @@ Rails.application.routes.draw do
 
   #resources for trainer
   get 'trainers/index'
+
+  get 'trainers/edit'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

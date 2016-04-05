@@ -18,7 +18,6 @@ class PagesController < ApplicationController
 
     @items = Item.all
 
-
   end
 
   def pokemon
