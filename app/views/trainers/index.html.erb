@@ -1,7 +1,9 @@
-<h1>Welcome to PokeRails, <%= "#{current_user.username}" %>!</h1>
-<p>You may use the navigation above to naviate the site or select a map image below to quickly begin exploring the region!</p>
+<h1><%= content_for(:title, "PokeRails | Trainers") %></h1>
 
-<div class="container">
+<h1>Welcome to PokeRails, <%= "#{current_user.username}" %>!</h1>
+<p>No shenanigans! Start exploring the maps below! </p>
+
+<div class="container text-center">
 <div>
 	<div class="col-md-4">
 		<pre>Map # 1 Goes Here </pre>

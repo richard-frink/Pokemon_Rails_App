@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   get 'pages/pokemon'
 
+  get 'pages/inventory'
+  
   #devise for users
   devise_for :users, :controllers => { registrations: 'users/registrations' }
 
