@@ -20,48 +20,6 @@
           <%= f.hidden_field :money, :value => 3000 %>
         </div>
 
-        <!-- avatar -->
-        <div class="form-group">
-          <%= f.label :avatar %> <br/>
-          <div class="col-md-6 text-center">
-          <%= f.radio_button_tag(:avatar, "trainer_male") %>
-          <%= f.label_tag(:avatar_trainer_male, "Male Starter Trainer") %>
-          </div>
-
-          <div class="col-md-6 text-center">
-          <%= f.radio_button_tag(:avatar, "trainer_female") %>
-          <%= f.label_tag(:avatar_trainer_female, "Female Starter Trainer") %>
-          </div>
-        </div>
-          <!-- Starter -->
-          <div class="form-group"> <br/>
-            <%= f.label :starter %> <br/>
-            <div class="col-md-4">
-              <%= f.radio_button_tag(:starter, "1") %>
-              <%= f.label_tag(:starter_1, "Bulbasaur") %>
-            </div>
-
-            <div class="col-md-4">
-              <%= f.radio_button_tag(:starter, "4") %>
-              <%= f.label_tag(:starter_7, "Charmander") %>
-            </div>
-
-            <div class="col-md-4">
-              <%= f.radio_button_tag(:starter, "7") %>
-              <%= f.label_tag(:starter_4, "Squirtle") %>
-            </div>
-
-            <div class="col-md-4">
-              <%= f.radio_button_tag(:starter, "25") %>
-              <%= f.label_tag(:starter_25, "Pikachu") %>
-            </div>
-
-            <div class="col-md-8">
-              <%= f.radio_button_tag(:starter, "133") %>
-              <%= f.label_tag(:starter_133, "Eevee") %>
-            </div>
-          </div>
-        <!-- End Custom Fields -->
       <div class="form-group">
         <%= f.label :email %>
         <%= f.email_field :email, class: "form-control" %>
