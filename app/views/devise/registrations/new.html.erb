@@ -19,13 +19,14 @@
         </div>1
 
         <div class="form-group">
-          <%= f.text_field :avatar, :value => "trainer_male" %>
+         Male <%= f.radio_button :avatar, "trainer_male" %>
+         Female <%= f.radio_button :avatar, "trainer_female" %>
         </div>
 
         <div class="form-group">
-          <%= f.text_field :starter, :value => "1" %>
+         Pikachu <%= f.radio_button :starter, 25 %>
+         Eevee <%= f.radio_button :starter, 133 %>
         </div>
-
 
       <div class="form-group">
         <%= f.label :email %>
