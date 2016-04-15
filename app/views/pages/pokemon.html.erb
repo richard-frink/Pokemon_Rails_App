@@ -6,7 +6,7 @@
 </div>
 
 <dl class="dl-horizontal">
-  <%= image_tag(@pokemon.name.downcase + "_n.png", :alt => @pokemon.name) %>
+  <%= image_tag("front/normal/#{@pokemon.id}.png", :alt => @pokemon.name) %>
   <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
   <dd><%= @pokemon.name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:type1) %>:</strong></dt>
