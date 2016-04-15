@@ -2,7 +2,7 @@ class PagesController < ApplicationController
 
   before_action :authenticate_user!
 
-  def bag
+  def inventory
   end
 
   def profile

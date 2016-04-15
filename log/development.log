@@ -37030,3 +37030,2040 @@ Started GET "/" for ::1 at 2016-04-05 18:10:02 -0400
 Processing by WelcomeController#index as HTML
   Rendered welcome/index.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 75ms (Views: 74.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-05 18:15:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 917ms (Views: 898.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/scaffolds.self-bdca8b9c113dc64679076ec0fa43b7a9c2129b5ad35bda6777465cf7435fd2ca.css?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/trainers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/application.self-8a55ab01de9131f2e53cffbb0279567b6faa1c0f5ac2de55228907156e14aa8d.css?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/devise_bootstrap_views_less.self-fbcfc84ffe8c2506067c12062881f41b61ab2575ddcb141e45e30c1e11f0ffe9.css?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/trainers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-05 18:15:20 -0400
+
+
+Started GET "/users/sign_in" for ::1 at 2016-04-05 18:15:41 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (12.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (101.7ms)
+Completed 200 OK in 204ms (Views: 180.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-04-05 18:15:53 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 83ms (Views: 82.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-05 18:15:55 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 63ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-05 18:15:57 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 78ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-05 18:15:58 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 74ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-05 18:16:00 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 72ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-04-05 18:22:09 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (11.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (42.2ms)
+Completed 200 OK in 179ms (Views: 175.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-04-05 18:22:43 -0400
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jdhZUL9e4mwZ5GZ/LhrRYIBFJPTW7+CwlvTrkQBBXiDC61xxH9THYOpy8V5DYjJis9e0pdDikOVKqwDvlfvNZg==", "user"=>{"username"=>"testuser", "money"=>"3000", "avatar"=>"trainer_male", "starter"=>"25", "email"=>"test@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (3.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'test@test.com' LIMIT 1[0m
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO "users" ("username", "email", "encrypted_password", "avatar", "starter", "money", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["username", "testuser"], ["email", "test@test.com"], ["encrypted_password", "$2a$10$YC8RGyUI6kkS8yl/GxBE6.d.HBk61VgwwZJX3Ah/9hsDZau6DfGKm"], ["avatar", "trainer_male"], ["starter", 25], ["money", 3000], ["created_at", "2016-04-05 22:22:43.727256"], ["updated_at", "2016-04-05 22:22:43.727256"]]
+  [1m[36m (11.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2016-04-05 22:22:43.744976"], ["current_sign_in_at", "2016-04-05 22:22:43.744976"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2016-04-05 22:22:43.746586"], ["id", 37]]
+  [1m[35m (11.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/trainers/index
+Completed 302 Found in 324ms (ActiveRecord: 29.1ms)
+
+
+Started GET "/trainers/index" for ::1 at 2016-04-05 18:22:43 -0400
+Processing by TrainersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 37]]
+  Rendered trainers/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 110ms (Views: 103.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trainers/index" for ::1 at 2016-04-05 18:22:54 -0400
+Processing by TrainersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 37]]
+  Rendered trainers/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 94ms (Views: 92.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pages/pokemart" for ::1 at 2016-04-05 18:23:05 -0400
+Processing by PagesController#pokemart as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 37]]
+  [1m[35mItem Load (0.8ms)[0m  SELECT "items".* FROM "items"
+  Rendered pages/pokemart.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 99ms (Views: 93.3ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/pages/pokemart" for ::1 at 2016-04-05 18:23:30 -0400
+Processing by PagesController#pokemart as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BizME8lP1d94W869xoGchm+NtO9g+faWEvnk1n9E1UZJH8kyacXw04vNWZyr+X+EXB8kvmb0hsPOpg+o6v5GAA==", "Potion"=>"", "Super Potion"=>"", "Hyper Potion"=>"", "Max Potion"=>"", "Poke Ball"=>"12", "commit"=>"Buy", "Great Ball"=>"", "Ultra Ball"=>"", "Master Ball"=>"", "Leaf Stone"=>"", "Water Stone"=>"", "Thunder Stone"=>"", "Fire Stone"=>"", "Moon Stone"=>""}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 37]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items"
+  Rendered pages/pokemart.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 114ms (Views: 111.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/inventory" for ::1 at 2016-04-05 18:23:35 -0400
+Processing by PagesController#inventory as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 37]]
+  Rendered pages/inventory.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 92ms (Views: 89.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pages/pokemon_team" for ::1 at 2016-04-05 18:23:39 -0400
+Processing by PagesController#pokemon_team as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 37]]
+  Rendered pages/pokemon_team.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 76ms (Views: 73.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-05 18:23:42 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 37]]
+  [1m[35mPokemon Load (0.5ms)[0m  SELECT "pokemons".* FROM "pokemons"
+  Rendered pages/pokedex.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 132ms (Views: 78.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-05 18:23:49 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 37]]
+  [1m[35mPokemon Load (0.5ms)[0m  SELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 311ms (Views: 116.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-05 18:23:54 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 37]]
+  [1m[35mPokemon Load (0.2ms)[0m  SELECT "pokemons".* FROM "pokemons"
+  Rendered pages/pokedex.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 72ms (Views: 69.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=2" for ::1 at 2016-04-05 18:23:56 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 37]]
+  [1m[35mPokemon Load (0.2ms)[0m  SELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered pages/pokemon.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 99ms (Views: 93.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-05 18:23:57 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 37]]
+  [1m[35mPokemon Load (0.3ms)[0m  SELECT "pokemons".* FROM "pokemons"
+  Rendered pages/pokedex.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 110ms (Views: 101.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=3" for ::1 at 2016-04-05 18:23:58 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"3"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 37]]
+  [1m[35mPokemon Load (0.1ms)[0m  SELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered pages/pokemon.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 83ms (Views: 80.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-05 18:24:01 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 37]]
+  [1m[35mPokemon Load (0.2ms)[0m  SELECT "pokemons".* FROM "pokemons"
+  Rendered pages/pokedex.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 100ms (Views: 97.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/trainers/edit" for ::1 at 2016-04-05 18:24:07 -0400
+Processing by TrainersController#edit as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 37]]
+  Rendered trainers/edit.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 71ms (Views: 68.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pages/pokemart" for ::1 at 2016-04-05 18:24:21 -0400
+Processing by PagesController#pokemart as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 37]]
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered pages/pokemart.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 73ms (Views: 70.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/trainers/index" for ::1 at 2016-04-05 18:24:40 -0400
+Processing by TrainersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 37]]
+  Rendered trainers/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 80ms (Views: 76.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-04-11 13:25:23 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 666ms (Views: 652.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8a55ab01de9131f2e53cffbb0279567b6faa1c0f5ac2de55228907156e14aa8d.css?body=1" for ::1 at 2016-04-11 13:25:24 -0400
+
+
+Started GET "/users/sign_in" for ::1 at 2016-04-11 13:25:26 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (13.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (82.7ms)
+Completed 200 OK in 167ms (Views: 148.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-04-11 13:25:33 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kZQUp2wSspAEG1BIXWqvxKUJhpA6aFPHWD7FPcyXSgbC0lwOGVNxQH+R8JtJz4FBbaIYeP67nz0JvcJEzi/Uqw==", "user"=>{"email"=>"rsussan@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "rsussan@live.com"]]
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.7ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kZQUp2wSspAEG1BIXWqvxKUJhpA6aFPHWD7FPcyXSgbC0lwOGVNxQH+R8JtJz4FBbaIYeP67nz0JvcJEzi/Uqw==", "user"=>{"email"=>"rsussan@live.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendered devise/shared/_links.html.erb (5.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 249ms (Views: 99.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-14 14:01:15 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 3701ms (Views: 3683.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-04-14 14:01:21 -0400
+Processing by Users::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (20.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (203.1ms)
+Completed 200 OK in 361ms (Views: 330.2ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users" for ::1 at 2016-04-14 14:01:39 -0400
+Processing by Users::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7q/o4rjRygo+Z2eZFSN0FNKjEVWndocsfAVrWepBZi11dn/u5liLUjD0FN0EuLesKoSYrjsRs0THYUTg4Eqwiw==", "user"=>{"username"=>"rsussan", "money"=>"3000", "avatar"=>"trainer_male", "starter"=>"25", "email"=>"rsussan@live.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (1.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'rsussan@live.com' LIMIT 1[0m
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO "users" ("username", "email", "encrypted_password", "avatar", "starter", "money", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["username", "rsussan"], ["email", "rsussan@live.com"], ["encrypted_password", "$2a$10$GH.BHEZYecVTStBOywu37O0Gv6l9lMhNNQOLmtuC7xMvt1Mdn4FDy"], ["avatar", "trainer_male"], ["starter", 25], ["money", 3000], ["created_at", "2016-04-14 18:01:40.164612"], ["updated_at", "2016-04-14 18:01:40.164612"]]
+  [1m[36m (12.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2016-04-14 18:01:40.185441"], ["current_sign_in_at", "2016-04-14 18:01:40.185441"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2016-04-14 18:01:40.186692"], ["id", 38]]
+  [1m[35m (13.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/trainers/index
+Completed 302 Found in 274ms (ActiveRecord: 30.3ms)
+
+
+Started GET "/trainers/index" for ::1 at 2016-04-14 14:01:40 -0400
+Processing by TrainersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 38]]
+  Rendered trainers/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 133ms (Views: 128.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 14:01:46 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.3ms)[0m  [1mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered pages/pokedex.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 123ms (Views: 113.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 14:01:47 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.3ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 95ms (Views: 89.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 14:30:07 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[35mUser Load (1.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (1.9ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 3.5ms)
+
+SyntaxError (/home/rsussan/RubymineProjects/Pokemon_App/app/views/pages/pokemon.html.erb:10: syntax error, unexpected '<'
+  <dt><strong><%= model_class.hu...
+   ^
+/home/rsussan/RubymineProjects/Pokemon_App/app/views/pages/pokemon.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+/home/rsussan/RubymineProjects/Pokemon_App/app/views/pages/pokemon.html.erb:44: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/pages/pokemon.html.erb:10: syntax error, unexpected '<'
+  app/views/pages/pokemon.html.erb:42: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/pages/pokemon.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.8ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (38.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (74.1ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 14:33:08 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 167ms (Views: 160.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/scaffolds.self-bdca8b9c113dc64679076ec0fa43b7a9c2129b5ad35bda6777465cf7435fd2ca.css?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/devise_bootstrap_views_less.self-fbcfc84ffe8c2506067c12062881f41b61ab2575ddcb141e45e30c1e11f0ffe9.css?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/trainers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/application.self-8a55ab01de9131f2e53cffbb0279567b6faa1c0f5ac2de55228907156e14aa8d.css?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/trainers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-14 14:33:09 -0400
+
+
+Started GET "/images/Bulbasaur_n.png" for ::1 at 2016-04-14 14:33:09 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/Bulbasaur_n.png"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (74.8ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (30.4ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (64.4ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 14:36:06 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[35mUser Load (1.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.2ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 156ms (Views: 146.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2016-04-14 14:36:06 -0400
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:36:06 -0400
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:36:06 -0400
+
+
+Started GET "/assets/scaffolds.self-bdca8b9c113dc64679076ec0fa43b7a9c2129b5ad35bda6777465cf7435fd2ca.css?body=1" for ::1 at 2016-04-14 14:36:06 -0400
+
+
+Started GET "/assets/trainers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:36:06 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:36:06 -0400
+
+
+Started GET "/assets/application.self-8a55ab01de9131f2e53cffbb0279567b6faa1c0f5ac2de55228907156e14aa8d.css?body=1" for ::1 at 2016-04-14 14:36:06 -0400
+
+
+Started GET "/assets/devise_bootstrap_views_less.self-fbcfc84ffe8c2506067c12062881f41b61ab2575ddcb141e45e30c1e11f0ffe9.css?body=1" for ::1 at 2016-04-14 14:36:06 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/trainers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/assets/bulbasaur_n-7307265558511ea080add119ab7e86b9f87aaab4cedef76df2a13290ca5ad8c9.png" for ::1 at 2016-04-14 14:36:07 -0400
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 14:36:41 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (27.2ms)
+Completed 200 OK in 139ms (Views: 135.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/trainers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/scaffolds.self-bdca8b9c113dc64679076ec0fa43b7a9c2129b5ad35bda6777465cf7435fd2ca.css?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/application.self-8a55ab01de9131f2e53cffbb0279567b6faa1c0f5ac2de55228907156e14aa8d.css?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/devise_bootstrap_views_less.self-fbcfc84ffe8c2506067c12062881f41b61ab2575ddcb141e45e30c1e11f0ffe9.css?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/trainers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/assets/bulbasaur_n-7307265558511ea080add119ab7e86b9f87aaab4cedef76df2a13290ca5ad8c9.png" for ::1 at 2016-04-14 14:36:41 -0400
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 14:37:16 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.2ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 105ms (Views: 102.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2016-04-14 14:37:16 -0400
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:37:16 -0400
+
+
+Started GET "/assets/scaffolds.self-bdca8b9c113dc64679076ec0fa43b7a9c2129b5ad35bda6777465cf7435fd2ca.css?body=1" for ::1 at 2016-04-14 14:37:16 -0400
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:37:16 -0400
+
+
+Started GET "/assets/application.self-8a55ab01de9131f2e53cffbb0279567b6faa1c0f5ac2de55228907156e14aa8d.css?body=1" for ::1 at 2016-04-14 14:37:16 -0400
+
+
+Started GET "/assets/trainers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:37:16 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/devise_bootstrap_views_less.self-fbcfc84ffe8c2506067c12062881f41b61ab2575ddcb141e45e30c1e11f0ffe9.css?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/trainers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/assets/bulbasaur_n-7307265558511ea080add119ab7e86b9f87aaab4cedef76df2a13290ca5ad8c9.png" for ::1 at 2016-04-14 14:37:17 -0400
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 14:37:24 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 141ms (Views: 136.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/scaffolds.self-bdca8b9c113dc64679076ec0fa43b7a9c2129b5ad35bda6777465cf7435fd2ca.css?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/trainers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/application.self-8a55ab01de9131f2e53cffbb0279567b6faa1c0f5ac2de55228907156e14aa8d.css?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/devise_bootstrap_views_less.self-fbcfc84ffe8c2506067c12062881f41b61ab2575ddcb141e45e30c1e11f0ffe9.css?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/trainers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/assets/bulbasaur_n-7307265558511ea080add119ab7e86b9f87aaab4cedef76df2a13290ca5ad8c9.png" for ::1 at 2016-04-14 14:37:24 -0400
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 14:37:38 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.3ms)[0m  [1mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered pages/pokedex.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 91ms (Views: 88.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=2" for ::1 at 2016-04-14 14:37:40 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered pages/pokemon.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 91ms (Views: 86.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/ivysaur_n-0d73b98081fcaa3fe22524d47573da3391a24465dc31c92c4ce2f1c00d14908e.png" for ::1 at 2016-04-14 14:37:40 -0400
+
+
+Started GET "/pages/pokemon?pokemon_id=3" for ::1 at 2016-04-14 14:37:43 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered pages/pokemon.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 103ms (Views: 100.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/images/venosaur_n.png" for ::1 at 2016-04-14 14:37:43 -0400
+
+ActionController::RoutingError (No route matches [GET] "/images/venosaur_n.png"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.0ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (29.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/rsussan/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (60.3ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=3" for ::1 at 2016-04-14 14:39:10 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"3"}
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered pages/pokemon.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 209ms (Views: 202.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/trainers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/scaffolds.self-bdca8b9c113dc64679076ec0fa43b7a9c2129b5ad35bda6777465cf7435fd2ca.css?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/application.self-8a55ab01de9131f2e53cffbb0279567b6faa1c0f5ac2de55228907156e14aa8d.css?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/devise_bootstrap_views_less.self-fbcfc84ffe8c2506067c12062881f41b61ab2575ddcb141e45e30c1e11f0ffe9.css?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/trainers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/assets/venusaur_n-f3ed13e1666f67ccf6aef1453d4a3fb0ceb6b6c5769c56f9e46ec4ac021542af.png" for ::1 at 2016-04-14 14:39:11 -0400
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 14:39:13 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[35mUser Load (2.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.7ms)[0m  [1mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered pages/pokedex.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 106ms (Views: 99.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 14:39:14 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 86ms (Views: 83.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trainers/index" for ::1 at 2016-04-14 14:39:16 -0400
+Processing by TrainersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  Rendered trainers/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 88ms (Views: 86.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pages/inventory" for ::1 at 2016-04-14 14:39:18 -0400
+Processing by PagesController#inventory as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 38]]
+  Rendered pages/inventory.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 92ms (Views: 89.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/pokemon_team" for ::1 at 2016-04-14 14:39:20 -0400
+Processing by PagesController#pokemon_team as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  Rendered pages/pokemon_team.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 80ms (Views: 78.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 14:39:22 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 38]]
+  [1m[35mPokemon Load (0.3ms)[0m  SELECT "pokemons".* FROM "pokemons"
+  Rendered pages/pokedex.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 79ms (Views: 76.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 14:39:24 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 38]]
+  [1m[35mPokemon Load (0.1ms)[0m  SELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 94ms (Views: 91.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 14:39:27 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 38]]
+  [1m[35mPokemon Load (0.2ms)[0m  SELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 91ms (Views: 87.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 14:39:30 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 38]]
+  [1m[35mPokemon Load (0.1ms)[0m  SELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 85ms (Views: 82.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 14:51:33 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 38]]
+  [1m[35mPokemon Load (0.5ms)[0m  SELECT "pokemons".* FROM "pokemons"
+  Rendered pages/pokedex.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 267ms (Views: 250.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/scaffolds.self-bdca8b9c113dc64679076ec0fa43b7a9c2129b5ad35bda6777465cf7435fd2ca.css?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/trainers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/application.self-8a55ab01de9131f2e53cffbb0279567b6faa1c0f5ac2de55228907156e14aa8d.css?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/devise_bootstrap_views_less.self-fbcfc84ffe8c2506067c12062881f41b61ab2575ddcb141e45e30c1e11f0ffe9.css?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/trainers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-14 14:51:34 -0400
+
+
+Started GET "/trainers/index" for ::1 at 2016-04-14 14:51:35 -0400
+Processing by TrainersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 38]]
+  Rendered trainers/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 85ms (Views: 82.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 14:51:37 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.3ms)[0m  [1mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered pages/pokedex.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 98ms (Views: 96.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 14:51:38 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.2ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 88ms (Views: 84.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pages/pokemon_team" for ::1 at 2016-04-14 14:51:44 -0400
+Processing by PagesController#pokemon_team as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  Rendered pages/pokemon_team.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 79ms (Views: 77.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/trainers/edit" for ::1 at 2016-04-14 14:51:46 -0400
+Processing by TrainersController#edit as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 38]]
+  Rendered trainers/edit.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 79ms (Views: 77.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pages/pokemart" for ::1 at 2016-04-14 14:51:48 -0400
+Processing by PagesController#pokemart as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered pages/pokemart.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 111ms (Views: 101.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 15:01:08 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[35mUser Load (2.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.5ms)[0m  [1mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered pages/pokedex.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1494ms (Views: 1485.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 15:01:11 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.2ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 103ms (Views: 99.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bulbasaur_nf-09cb30f78be5673bc2d3bec2190b86c2a3d2bcd784a53f1b57c261e38721dcd3.gif" for ::1 at 2016-04-14 15:01:11 -0400
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 15:01:25 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[35mUser Load (2.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.2ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (71.2ms)
+Completed 200 OK in 181ms (Views: 169.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2016-04-14 15:01:25 -0400
+
+
+Started GET "/assets/scaffolds.self-bdca8b9c113dc64679076ec0fa43b7a9c2129b5ad35bda6777465cf7435fd2ca.css?body=1" for ::1 at 2016-04-14 15:01:25 -0400
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 15:01:25 -0400
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 15:01:25 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 15:01:25 -0400
+
+
+Started GET "/assets/trainers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 15:01:25 -0400
+
+
+Started GET "/assets/application.self-8a55ab01de9131f2e53cffbb0279567b6faa1c0f5ac2de55228907156e14aa8d.css?body=1" for ::1 at 2016-04-14 15:01:25 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-14 15:01:25 -0400
+
+
+Started GET "/assets/devise_bootstrap_views_less.self-fbcfc84ffe8c2506067c12062881f41b61ab2575ddcb141e45e30c1e11f0ffe9.css?body=1" for ::1 at 2016-04-14 15:01:25 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/trainers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/bulbasaur_sf-62a4b7a1ed9e145f7ab87da7cdb8542205f96e510c0fad4b0502cde2de140935.gif" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/assets/bulbasaur_sf-62a4b7a1ed9e145f7ab87da7cdb8542205f96e510c0fad4b0502cde2de140935.gif" for ::1 at 2016-04-14 15:01:26 -0400
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 15:01:38 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.2ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 118ms (Views: 110.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2016-04-14 15:01:38 -0400
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/scaffolds.self-bdca8b9c113dc64679076ec0fa43b7a9c2129b5ad35bda6777465cf7435fd2ca.css?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/trainers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/application.self-8a55ab01de9131f2e53cffbb0279567b6faa1c0f5ac2de55228907156e14aa8d.css?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/devise_bootstrap_views_less.self-fbcfc84ffe8c2506067c12062881f41b61ab2575ddcb141e45e30c1e11f0ffe9.css?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/trainers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/assets/bulbasaur_n-7307265558511ea080add119ab7e86b9f87aaab4cedef76df2a13290ca5ad8c9.png" for ::1 at 2016-04-14 15:01:39 -0400
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 15:53:07 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[35mUser Load (3.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.3ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 462ms (Views: 422.8ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/scaffolds.self-bdca8b9c113dc64679076ec0fa43b7a9c2129b5ad35bda6777465cf7435fd2ca.css?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/application.self-8a55ab01de9131f2e53cffbb0279567b6faa1c0f5ac2de55228907156e14aa8d.css?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/trainers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/devise_bootstrap_views_less.self-fbcfc84ffe8c2506067c12062881f41b61ab2575ddcb141e45e30c1e11f0ffe9.css?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/trainers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/assets/bulbasaur_n-7307265558511ea080add119ab7e86b9f87aaab4cedef76df2a13290ca5ad8c9.png" for ::1 at 2016-04-14 15:53:08 -0400
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 15:53:12 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.4ms)[0m  [1mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered pages/pokedex.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 110ms (Views: 105.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 15:53:14 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (49.3ms)
+Completed 200 OK in 138ms (Views: 135.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 15:53:15 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.3ms)[0m  [1mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered pages/pokedex.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 93ms (Views: 90.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=3" for ::1 at 2016-04-14 15:53:16 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered pages/pokemon.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 95ms (Views: 92.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 15:53:17 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.3ms)[0m  [1mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered pages/pokedex.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 111ms (Views: 106.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=2" for ::1 at 2016-04-14 15:53:18 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"2"}
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.2ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered pages/pokemon.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 153ms (Views: 146.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 15:53:19 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.3ms)[0m  [1mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered pages/pokedex.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 103ms (Views: 100.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=3" for ::1 at 2016-04-14 15:53:20 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered pages/pokemon.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 111ms (Views: 107.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 15:53:20 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.2ms)[0m  [1mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered pages/pokedex.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 92ms (Views: 89.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=2" for ::1 at 2016-04-14 15:53:21 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered pages/pokemon.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 87ms (Views: 84.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 15:53:22 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.3ms)[0m  [1mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered pages/pokedex.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 107ms (Views: 104.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 15:53:23 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.2ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 89ms (Views: 85.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 15:53:27 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.3ms)[0m  [1mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered pages/pokedex.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 95ms (Views: 92.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=3" for ::1 at 2016-04-14 15:53:28 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered pages/pokemon.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 105ms (Views: 101.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 15:53:30 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.2ms)[0m  [1mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered pages/pokedex.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 86ms (Views: 84.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=3" for ::1 at 2016-04-14 15:53:35 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered pages/pokemon.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 84ms (Views: 82.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 15:53:40 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.2ms)[0m  [1mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered pages/pokedex.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 100ms (Views: 98.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 15:53:41 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 87ms (Views: 84.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 15:53:44 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.3ms)[0m  [1mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered pages/pokedex.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 89ms (Views: 87.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=3" for ::1 at 2016-04-14 15:53:45 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.2ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered pages/pokemon.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 101ms (Views: 98.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 15:53:47 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.2ms)[0m  [1mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered pages/pokedex.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 84ms (Views: 81.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 15:53:49 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 87ms (Views: 84.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 15:53:51 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.3ms)[0m  [1mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered pages/pokedex.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 104ms (Views: 101.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=1" for ::1 at 2016-04-14 15:53:54 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/pokemon.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 103ms (Views: 98.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 15:53:55 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.2ms)[0m  [1mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered pages/pokedex.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 100ms (Views: 95.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=3" for ::1 at 2016-04-14 15:53:56 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered pages/pokemon.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 102ms (Views: 99.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-04-14 15:53:58 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.3ms)[0m  [1mSELECT "pokemons".* FROM "pokemons"[0m
+  Rendered pages/pokedex.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 92ms (Views: 88.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=3" for ::1 at 2016-04-14 15:53:59 -0400
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.1ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered pages/pokemon.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 95ms (Views: 92.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pages/pokemon?pokemon_id=3" for ::1 at 2016-04-14 16:05:01 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#pokemon as HTML
+  Parameters: {"pokemon_id"=>"3"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 38]]
+  [1m[36mPokemon Load (0.3ms)[0m  [1mSELECT  "pokemons".* FROM "pokemons" WHERE "pokemons"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered pages/pokemon.html.erb within layouts/application (1235.3ms)
+Completed 200 OK in 1429ms (Views: 1354.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/application.self-8a55ab01de9131f2e53cffbb0279567b6faa1c0f5ac2de55228907156e14aa8d.css?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/trainers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/devise_bootstrap_views_less.self-fbcfc84ffe8c2506067c12062881f41b61ab2575ddcb141e45e30c1e11f0ffe9.css?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/scaffolds.self-bdca8b9c113dc64679076ec0fa43b7a9c2129b5ad35bda6777465cf7435fd2ca.css?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/trainers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/venusaur_n-f3ed13e1666f67ccf6aef1453d4a3fb0ceb6b6c5769c56f9e46ec4ac021542af.png" for ::1 at 2016-04-14 16:05:03 -0400
+
+
+Started GET "/assets/venusaur_n-f3ed13e1666f67ccf6aef1453d4a3fb0ceb6b6c5769c56f9e46ec4ac021542af.png" for ::1 at 2016-04-14 16:05:03 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddStatusToPokemons (20160415162155)
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "pokemons" ADD "status" varchar[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160415162155"]]
+  [1m[36m (11.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
