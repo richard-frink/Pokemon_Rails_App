@@ -1,39 +1,81 @@
 <h1><%= content_for(:title, "PokeRails | Pokemon") %></h1>
 
 <%- model_class = Pokemon -%>
-<div class="page-header">
-  <h1><%=t '.title', :default => model_class.model_name.human.titleize %></h1>
-</div>
+<h1><%=t '.title', :default => @pokemon.name %></h1>
+<hr>
 
-<dl class="dl-horizontal">
-  <%= image_tag("front/normal/#{@pokemon.id}.png", :alt => @pokemon.name) %>
-  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
-  <dd><%= @pokemon.name %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:type1) %>:</strong></dt>
-  <dd><%= @pokemon.type1 %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:type2) %>:</strong></dt>
-  <dd><%= @pokemon.type2 %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:move1) %>:</strong></dt>
-  <dd><%= @pokemon.move1 %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:move2) %>:</strong></dt>
-  <dd><%= @pokemon.move2 %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:move3) %>:</strong></dt>
-  <dd><%= @pokemon.move3 %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:move4) %>:</strong></dt>
-  <dd><%= @pokemon.move4 %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:hp) %>:</strong></dt>
-  <dd><%= @pokemon.hp %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:attack) %>:</strong></dt>
-  <dd><%= @pokemon.attack %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:defense) %>:</strong></dt>
-  <dd><%= @pokemon.defense %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:specialAttack) %>:</strong></dt>
-  <dd><%= @pokemon.specialAttack %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:specialDefense) %>:</strong></dt>
-  <dd><%= @pokemon.specialDefense %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:speed) %>:</strong></dt>
-  <dd><%= @pokemon.speed %></dd>
-</dl>
+
+<table>
+  <tr>
+    <td><h3>Normal</h3></td>
+    <td><%= image_tag("front/normal/#{@pokemon.id}.png", :alt => @pokemon.name) %></td>
+    <td><h3>Shiny</h3></td>
+    <td><%= image_tag("front/shiny/#{@pokemon.id}.png", :alt => @pokemon.name) %></td>
+  </tr>
+</table>
+
+
+<!-- Types -->
+<table>
+  <thead>
+    <tr>
+      <th colspan="2"><strong>Types</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="col-md-6"><%= @pokemon.type1 %></td>
+      <td class="col-md-6"><%= @pokemon.type2 %></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Base Moves -->
+<table>
+  <thead>
+  <tr>
+    <th colspan="4"><strong>Base Moves</strong></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td class="col-md-3"><%= @pokemon.move1 %></td>
+    <td class="col-md-3"><%= @pokemon.move2 %></td>
+    <td class="col-md-3"><%= @pokemon.move3 %></td>
+    <td class="col-md-3"><%= @pokemon.move4 %></td>
+  </tr>
+  </tbody>
+</table>
+
+
+<!-- Stats -->
+<table>
+  <thead>
+  <tr>
+    <th colspan="6"><strong>Stats</strong></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td class="col-md-2"><strong><%= model_class.human_attribute_name(:hp) %>:</strong></td>
+    <td class="col-md-2"><%= @pokemon.hp %></td>
+    <td class="col-md-2"><strong><%= model_class.human_attribute_name(:speed) %>:</strong></td>
+    <td class="col-md-2"><%= @pokemon.speed %></td>
+  </tr>
+  <tr>
+    <td class="col-md-2"><strong><%= model_class.human_attribute_name(:attack) %>:</strong></td>
+    <td class="col-md-2"><%= @pokemon.attack %></td>
+    <td class="col-md-2"><strong><%= model_class.human_attribute_name(:specialAttack) %>:</strong></td>
+    <td class="col-md-2"><%= @pokemon.specialAttack %></td>
+  </tr>
+  <tr>
+    <td class="col-md-2"><strong><%= model_class.human_attribute_name(:defense) %>:</strong></td>
+    <td class="col-md-2"><%= @pokemon.defense %></td>
+    <td class="col-md-2"><strong><%= model_class.human_attribute_name(:specialDefense) %>:</strong></td>
+    <td class="col-md-2"><%= @pokemon.specialDefense %></td>
+  </tr>
+  </tbody>
+</table>
 
 <%= link_to t('.back', :default => t("helpers.links.back")),
             pages_pokedex_path, :class => 'btn btn-default'  %>

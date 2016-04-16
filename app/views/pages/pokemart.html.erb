@@ -1,19 +1,11 @@
 <h1><%= content_for(:title, "PokeRails | Pokemart") %></h1>
 
 <%- model_class_item = Item -%>
-<head><title>Pokemart</title></head>
 <h1>Pokemart</h1>
 <hr>
 
-
 <p>Your funds: <%= "#{current_user.money}" %></p>
 <hr>
-
-<!--
-    !DONE!  Make a form (text field) for the quantity of a given item wanted by the user
-    Have the number input validated first
-    and then passed to be added to the user's list of current items they have
--->
 
 <%= form_tag(:action => "pokemart")  do %>
 
@@ -21,9 +13,9 @@
 <table>
   <thead>
     <tr>
-      <th><b>Name</b></th>
-      <th><b>Price</b></th>
-      <th><b>Category</b></th>
+      <th class="col-md-2"><b>Name</b></th>
+      <th class="col-md-2"><b>Price</b></th>
+      <th class="col-md-2"><b>Category</b></th>
       <th colspan="2"><b>Quantity</b></th>
     </tr>
   </thead>
@@ -31,11 +23,11 @@
     <% @items.each do |item| %>
       <% if item.item_type=="Medicine" %>
         <tr>
-          <td><%= item.name %></td>
-          <td><%= item.price %></td>
-          <td><%= item.item_type %></td>
-          <td><%= text_field_tag(item.name, "") %></td>
-          <td><%= submit_tag("Buy") %></td>
+          <td class="col-md-2"><%= item.name %></td>
+          <td class="col-md-2"><%= item.price %></td>
+          <td class="col-md-2"><%= item.item_type %></td>
+          <td class="col-md-2"><%= text_field_tag(item.name, "0") %></td>
+          <td class="col-md-2"><%= submit_tag("Buy") %></td>
         </tr>
       <% end %>
     <% end %>
@@ -48,9 +40,9 @@
 <table>
   <thead>
     <tr>
-      <th><b>Name</b></th>
-      <th><b>Price</b></th>
-      <th><b>Category</b></th>
+      <th class="col-md-2"><b>Name</b></th>
+      <th class="col-md-2"><b>Price</b></th>
+      <th class="col-md-2"><b>Category</b></th>
       <th colspan="2"><b>Quantity</b></th>
     </tr>
   </thead>
@@ -58,11 +50,11 @@
     <% @items.each do |item| %>
       <% if item.item_type=="Pokeballs" %>
         <tr>
-          <td><%= item.name %></td>
-          <td><%= item.price %></td>
-          <td><%= item.item_type %></td>
-          <td><%= text_field_tag(item.name, "") %></td>
-          <td><%= submit_tag("Buy") %></td>
+          <td class="col-md-2"><%= item.name %></td>
+          <td class="col-md-2"><%= item.price %></td>
+          <td class="col-md-2"><%= item.item_type %></td>
+          <td class="col-md-2"><%= text_field_tag(item.name, "0") %></td>
+          <td class="col-md-2"><%= submit_tag("Buy") %></td>
         </tr>
       <% end %>
     <% end %>
@@ -75,9 +67,9 @@
 <table>
   <thead>
     <tr>
-      <th><b>Name</b></th>
-      <th><b>Price</b></th>
-      <th><b>Category</b></th>
+      <th class="col-md-2"><b>Name</b></th>
+      <th class="col-md-2"><b>Price</b></th>
+      <th class="col-md-2"><b>Category</b></th>
       <th colspan="2"><b>Quantity</b></th>
     </tr>
   </thead>
@@ -85,11 +77,11 @@
     <% @items.each do |item| %>
       <% if item.item_type=="Evolution_Stone" %>
         <tr>
-          <td><%= item.name %></td>
-          <td><%= item.price %></td>
-          <td>Evolution Stone</td>
-          <td><%= text_field_tag(item.name, "") %></td>
-          <td><%= submit_tag("Buy") %></td>
+          <td class="col-md-2"><%= item.name %></td>
+          <td class="col-md-2"><%= item.price %></td>
+          <td class="col-md-2">Evolution Stone</td>
+          <td class="col-md-2"><%= text_field_tag(item.name, "0") %></td>
+          <td class="col-md-2"><%= submit_tag("Buy") %></td>
         </tr>
       <% end %>
     <% end %>
