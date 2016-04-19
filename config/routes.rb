@@ -1,9 +1,8 @@
 Rails.application.routes.draw do
 
+
   #resources for member components
   get 'pages/bag'
-
-  get 'pages/profile'
 
   get 'pages/pokedex'
 
@@ -15,10 +14,11 @@ Rails.application.routes.draw do
   get 'pages/pokemon'
 
   get 'pages/inventory'
-  
-  #devise for users
-  devise_for :users, :controllers => { registrations: 'users/registrations' }
 
+  get 'trainers/edit'
+
+  #devise for users
+  devise_for :users, :controllers => { registrations: 'registrations'}
 
   #getter for homepage
   get 'welcome/index'
@@ -26,13 +26,17 @@ Rails.application.routes.draw do
   #resources for trainer
   get 'trainers/index'
 
-  get 'trainers/edit'
+  # You can have the root of your site routed with "root"
+  root 'welcome#index'
+
+  #reroutes all incorrect urls placed into the browser with redirecting to trainers/index
+  get '*path' => redirect('trainers/index')
+
+
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
-  root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -1,3 +1,15 @@
-<h1>trainers/edit</h1>
+<h1><%= content_for(:title, "PokeRails | " + @user.username) %></h1>
 
-<p><%= @user.email %></p>
+<h1>Profile</h1>
+<hr>
+
+<p>User: <%= @user.username %></p>
+<p>Email: <%= @user.email %></p>
+
+<p>Money: <%= @user.money %></p>
+
+<footer>
+  <hr>
+  <p>Total Logins: <%= @user.sign_in_count %></p>
+  <p>Last logged in: <%= @user.last_sign_in_at %></p>
+</footer>
