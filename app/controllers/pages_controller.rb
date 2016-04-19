@@ -5,6 +5,9 @@ class PagesController < ApplicationController
   def inventory
   end
 
+  def profile
+  end
+
   def pokedex
 
     @pokemons = Pokemon.all

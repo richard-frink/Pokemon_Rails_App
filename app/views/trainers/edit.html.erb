@@ -5,8 +5,10 @@
 
 <p>User: <%= @user.username %></p>
 <p>Email: <%= @user.email %></p>
-
 <p>Money: <%= @user.money %></p>
+
+<%= link_to "Change your password", edit_user_registration_path %>
+
 
 <footer>
   <hr>
