@@ -3,15 +3,15 @@
 <h1>Profile</h1>
 <hr>
 
-<p>User: <%= @user.username %></p>
-<p>Email: <%= @user.email %></p>
-<p>Money: <%= @user.money %></p>
+<h4>User: <%= @user.username %></h4>
+<h4>Email: <%= @user.email %></h4>
+<h4>Money: <%= @user.money %></h4>
 
-<%= link_to "Change your password", edit_user_registration_path %>
-
+<hr>
+<h4><%= link_to "Change your password", edit_user_registration_path %></h4>
 
 <footer>
   <hr>
-  <p>Total Logins: <%= @user.sign_in_count %></p>
-  <p>Last logged in: <%= @user.last_sign_in_at %></p>
+  <h5>Total Logins: <%= @user.sign_in_count %></h5>
+  <h5>Last logged in: <%= @user.last_sign_in_at %></h5>
 </footer>
