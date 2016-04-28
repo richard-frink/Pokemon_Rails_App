@@ -1,28 +1,28 @@
 class ItemsController < ApplicationController
   before_action :set_item, only: [:show, :edit, :update, :destroy]
 
-  # GET /items
-  # GET /items.json
+  # GET /item
+  # GET /item.json
   def index
     @items = Item.all
   end
 
-  # GET /items/1
-  # GET /items/1.json
+  # GET /item/1
+  # GET /item/1.json
   def show
   end
 
-  # GET /items/new
+  # GET /item/new
   def new
     @item = Item.new
   end
 
-  # GET /items/1/edit
+  # GET /item/1/edit
   def edit
   end
 
-  # POST /items
-  # POST /items.json
+  # POST /item
+  # POST /item.json
   def create
     @item = Item.new(item_params)
 
@@ -37,8 +37,8 @@ class ItemsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /items/1
-  # PATCH/PUT /items/1.json
+  # PATCH/PUT /item/1
+  # PATCH/PUT /item/1.json
   def update
     respond_to do |format|
       if @item.update(item_params)
@@ -51,8 +51,8 @@ class ItemsController < ApplicationController
     end
   end
 
-  # DELETE /items/1
-  # DELETE /items/1.json
+  # DELETE /item/1
+  # DELETE /item/1.json
   def destroy
     @item.destroy
     respond_to do |format|

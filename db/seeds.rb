@@ -10,11 +10,15 @@
 Pokemon.delete_all
 Item.delete_all
 
+#pokemon
+
 Pokemon.create(id: 1, name: 'Bulbasaur', type1:  'Grass', type2: 'Poison', move1: 'Leech Seed',move2: 'Vine Whip', move3: 'Tackle', move4: 'Sleep Powder', hp: 45, attack: 49, defense: 49, specialAttack: 65, specialDefense: 65, speed: 45)
 Pokemon.create(id: 2, name: 'Ivysaur',type1: 'Grass', type2: 'Poison',move1: 'Vine Whip', move2: 'Razor Leaf', move3: 'Sleep Powder', move4: 'Take Down', hp: 60, attack: 62, defense: 63, specialAttack: 80, specialDefense: 80, speed: 60)
 Pokemon.create(id: 3, name: 'Venusaur', type1: 'Grass', type2: 'Poison', move1: 'Vine Whip',move2: 'Solarbeam', move3: 'Take Down', move4: 'Sleep Powder', hp: 80, attack: 82, defense: 83, specialAttack: 100, specialDefense: 100, speed: 80)
 #Pokemon.create(id: , name: '', type1: '', type2: '', move1: '', move2: '', move3: '', move4: '', hp: , attack: , defense: , specialAttack: , specialDefense: , speed: )
 
+
+#item
 
 Item.create(id: 1, name: 'Potion', price: 300, item_type: 'Medicine')
 Item.create(id: 2, name: 'Super Potion', price: 600, item_type: 'Medicine')

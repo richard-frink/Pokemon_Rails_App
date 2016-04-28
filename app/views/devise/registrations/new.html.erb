@@ -21,19 +21,25 @@
         <div class="form-group">
 
         <%= f.label :avatar %> <br />
-          <div class="text-center">
-         Male <%= f.radio_button :avatar, "trainer_male" %>
-         Female <%= f.radio_button :avatar, "trainer_female" %>
-       </div>
+          <div class="col-md-12">
+            <p class="col-md-3"><%= image_tag("avatar/avatar_1.gif") %> Trainer 1 <%= f.radio_button :avatar, "1" %> </p>
+            <p class="col-md-3"><%= image_tag("avatar/avatar_2.gif") %> Trainer 2 <%= f.radio_button :avatar, "2" %> </p>
+            <p class="col-md-3"><%= image_tag("avatar/avatar_3.gif") %> Trainer 3 <%= f.radio_button :avatar, "3" %> </p>
+            <p class="col-md-3"><%= image_tag("avatar/avatar_4.gif") %> Trainer 4 <%= f.radio_button :avatar, "4" %> </p>
+            <p class="col-md-3"><%= image_tag("avatar/avatar_5.gif") %> Trainer 5 <%= f.radio_button :avatar, "5" %> </p>
+            <p class="col-md-3"><%= image_tag("avatar/avatar_6.gif") %> Trainer 6 <%= f.radio_button :avatar, "6" %> </p>
+            <p class="col-md-3"><%= image_tag("avatar/avatar_7.gif") %> Trainer 7 <%= f.radio_button :avatar, "7" %> </p>
+            <p class="col-md-3"><%= image_tag("avatar/avatar_8.gif") %> Trainer 8 <%= f.radio_button :avatar, "8" %> </p>
+          </div>
         </div>
 
         <div class="form-group">
         <%= f.label :starter %> <br />
-          
-          <div class="text-center">
-         Pikachu <%= f.radio_button :starter, 25 %>
-         Eevee <%= f.radio_button :starter, 133 %>
-       </div>
+          <div class="col-md-12">
+            <p class="col-md-4"><%= image_tag("front/normal/#{Pokemon.find(1).id}.png") %> Bulbasaur <%= f.radio_button :starter, 1 %> </p>
+            <p class="col-md-4"><%= image_tag("front/normal/4.png") %> Charmander <%= f.radio_button :starter, 4 %> </p>
+            <p class="col-md-4"><%= image_tag("front/normal/7.png") %> Squirtle <%= f.radio_button :starter, 7 %> </p>
+          </div>
         </div>
 
       <div class="form-group">
