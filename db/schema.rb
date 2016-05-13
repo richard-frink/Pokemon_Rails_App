@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160426194607) do
+ActiveRecord::Schema.define(version: 20160508193715) do
 
-  create_table "item", force: :cascade do |t|
+  create_table "items", force: :cascade do |t|
     t.string   "name"
     t.integer  "price"
     t.string   "item_type"
@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(version: 20160426194607) do
     t.integer  "pokemon_position"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
+    t.integer  "exp"
   end
 
   create_table "users", force: :cascade do |t|
