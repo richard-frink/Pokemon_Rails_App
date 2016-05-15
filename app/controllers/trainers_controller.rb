@@ -13,6 +13,8 @@ class TrainersController < ApplicationController
       ownership.pokemon_id = current_user.starter
       ownership.pokemon_position = 1
       ownership.exp = 0
+      ownership.shiny = 0
+      ownership.shiny = 1 if is_shiny?
       ownership.save
     end
 

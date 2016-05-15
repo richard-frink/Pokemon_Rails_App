@@ -1,4 +1,84 @@
 <h1><%= content_for(:title, "PokeRails | Team") %></h1>
 
-<h1>Pages#pokemon_team</h1>
-<p>Find me in app/views/pages/pokemon_team.html.erb</p>
+<h1>My Pokemon</h1>
+<hr>
+
+<h2>Team</h2>
+<hr>
+
+<div class="col-md-12">
+  <% for i in 1..6 %>
+    <p class="col-md-2"><b>Slot <%= i %></b></p>
+  <% end %>
+</div>
+
+<div class="col-md-12">
+  <p class="col-md-2">
+    <% if @team[0] != nil %>
+        <% if @team[0].shiny == 0 %>
+          <%= image_tag("front/normal/#{@team[0].pokemon_id}.png") %>
+        <% else %>
+          <%= image_tag("front/shiny/#{@team[0].pokemon_id}.png") %>
+        <% end %>
+    <% end %>
+  </p>
+  <p class="col-md-2">
+    <% if @team[1] != nil %>
+        <% if @team[1].shiny == 0 %>
+            <%= image_tag("front/normal/#{@team[1].pokemon_id}.png") %>
+        <% else %>
+            <%= image_tag("front/shiny/#{@team[1].pokemon_id}.png") %>
+        <% end %>
+    <% end %>
+  </p>
+  <p class="col-md-2">
+    <% if @team[2] != nil %>
+        <% if @team[2].shiny == 0 %>
+            <%= image_tag("front/normal/#{@team[2].pokemon_id}.png") %>
+        <% else %>
+            <%= image_tag("front/shiny/#{@team[2].pokemon_id}.png") %>
+        <% end %>
+    <% end %>
+  </p>
+  <p class="col-md-2">
+    <% if @team[3] != nil %>
+        <% if @team[3].shiny == 0 %>
+            <%= image_tag("front/normal/#{@team[3].pokemon_id}.png") %>
+        <% else %>
+            <%= image_tag("front/shiny/#{@team[3].pokemon_id}.png") %>
+        <% end %>
+    <% end %>
+  </p>
+  <p class="col-md-2">
+    <% if @team[4] != nil %>
+        <% if @team[4].shiny == 0 %>
+            <%= image_tag("front/normal/#{@team[4].pokemon_id}.png") %>
+        <% else %>
+            <%= image_tag("front/shiny/#{@team[4].pokemon_id}.png") %>
+        <% end %>
+    <% end %>
+  </p>
+  <p class="col-md-2">
+    <% if @team[5] != nil %>
+        <% if @team[5].shiny == 0 %>
+            <%= image_tag("front/normal/#{@team[5].pokemon_id}.png") %>
+        <% else %>
+            <%= image_tag("front/shiny/#{@team[5].pokemon_id}.png") %>
+        <% end %>
+    <% end %>
+  </p>
+</div>
+
+<h2>All Pokemon</h2>
+<hr>
+<% @mypokemon.each do |p| %>
+
+    <p class="col-md-2">
+      <% if p.shiny == 0 %>
+          <%= image_tag("front/normal/#{p.pokemon_id}.png") %>
+      <% else %>
+          <%= image_tag("front/shiny/#{p.pokemon_id}.png") %>
+      <% end %>
+    </p>
+
+<% end %>

@@ -20,10 +20,30 @@
       <td colspan="3"><%= link_to mon.name, pages_pokemon_path(:pokemon_id => mon.id) %></td>
       <!--
         this will check with the user and see if they have caught a pokemon
-        that is of this id and whethet they have caught a normal and or shiny version
+        that is of this id and whether they have caught a normal and or shiny version
         -->
-      <td>pokeball_image</td>
-      <td>pokeball_image</td>
+      <td>
+        <% temp = false %>
+        <% @mypokemon.each do |p| %>
+          <%= (temp = true) if (p.pokemon_id == mon.id) && (p.shiny == 0) %>
+        <% end %>
+        <% if temp %>
+            <%= image_tag("normal_ball.png")%>
+        <% else %>
+            <%= image_tag("shaded_ball.png")%>
+        <% end %>
+      </td>
+      <td>
+        <% temp = false %>
+        <% @mypokemon.each do |p| %>
+            <%= (temp = true) if (p.pokemon_id == mon.id) && (p.shiny == 1) %>
+        <% end %>
+        <% if temp %>
+            <%= image_tag("normal_ball.png")%>
+        <% else %>
+            <%= image_tag("shaded_ball.png")%>
+        <% end %>
+      </td>
     </tr>
   <% end %>
   </tbody>
