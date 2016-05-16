@@ -4,10 +4,10 @@
 <h1>Pokemart</h1>
 <hr>
 
-<p>Your funds: <%= "#{current_user.money}" %></p>
+<p><b>Your funds: <%= "#{current_user.money}" %></b></p>
 <hr>
 
-<%= form_tag(:action => "pokemart")  do %>
+<%= form_tag(:action => "pokemart", )  do %>
 
 <h2>Medicine</h2>
 <table>
@@ -26,7 +26,7 @@
           <td class="col-md-2"><%= image_tag("item/#{item.id}.png")%><%= item.name %></td>
           <td class="col-md-2"><%= item.price %></td>
           <td class="col-md-2"><%= item.item_type %></td>
-          <td class="col-md-2"><%= text_field_tag(item.name, "0") %></td>
+          <td class="col-md-2"><%= text_field_tag(item.name, '0') %></td>
           <td class="col-md-2"><%= submit_tag("Buy") %></td>
         </tr>
       <% end %>
@@ -53,7 +53,7 @@
           <td class="col-md-2"><%= image_tag("item/#{item.id}.png")%><%= item.name %></td>
           <td class="col-md-2"><%= item.price %></td>
           <td class="col-md-2"><%= item.item_type %></td>
-          <td class="col-md-2"><%= text_field_tag(item.name, "0") %></td>
+          <td class="col-md-2"><%= text_field_tag(item.name, '0') %></td>
           <td class="col-md-2"><%= submit_tag("Buy") %></td>
         </tr>
       <% end %>
@@ -80,7 +80,7 @@
           <td class="col-md-2"><%= image_tag("item/#{item.id}.png")%><%= item.name %></td>
           <td class="col-md-2"><%= item.price %></td>
           <td class="col-md-2">Evolution Stone</td>
-          <td class="col-md-2"><%= text_field_tag(item.name, "0") %></td>
+          <td class="col-md-2"><%= text_field_tag(item.name,'0') %></td>
           <td class="col-md-2"><%= submit_tag("Buy") %></td>
         </tr>
       <% end %>

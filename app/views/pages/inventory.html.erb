@@ -6,12 +6,20 @@
 <table>
   <thead>
     <tr>
-      <th class="col-md-2"><b>Name</b></th>
-      <th class="col-md-2"><b>Price</b></th>
-      <th class="col-md-2"><b>Category</b></th>
-      <th class="col-md-2"><b>Quantity</b></th>
+      <th class="col-md-6"><b>Name</b></th>
+      <th class="col-md-6"><b>Quantity</b></th>
     </tr>
   </thead>
+  <tbody>
+  <% @items.each do |item| %>
+      <% if item.item_type=="Medicine" %>
+          <tr>
+            <td class="col-md-6"><%= image_tag("item/#{item.id}.png")%><%= item.name %></td>
+            <td class="col-md-6"><%= @myitems[item.id - 1].qty %></td>
+          </tr>
+      <% end %>
+  <% end %>
+  </tbody>
 </table>
 
 
@@ -20,14 +28,19 @@
 <table>
   <thead>
     <tr>
-      <th class="col-md-2"><b>Name</b></th>
-      <th class="col-md-2"><b>Price</b></th>
-      <th class="col-md-2"><b>Category</b></th>
-      <th class="col-md-2"><b>Quantity</b></th>
+      <th class="col-md-6"><b>Name</b></th>
+      <th class="col-md-6"><b>Quantity</b></th>
     </tr>
   </thead>
   <tbody>
-    
+  <% @items.each do |item| %>
+      <% if item.item_type=="Pokeballs" %>
+          <tr>
+            <td class="col-md-6"><%= image_tag("item/#{item.id}.png")%><%= item.name %></td>
+            <td class="col-md-6"><%= @myitems[item.id - 1].qty %></td>
+          </tr>
+      <% end %>
+  <% end %>
   </tbody>
 </table>
 
@@ -37,12 +50,18 @@
 <table>
   <thead>
     <tr>
-      <th class="col-md-2"><b>Name</b></th>
-      <th class="col-md-2"><b>Price</b></th>
-      <th class="col-md-2"><b>Category</b></th>
-      <th class="col-md-2"><b>Quantity</b></th>
+      <th class="col-md-6"><b>Name</b></th>
+      <th class="col-md-6"><b>Quantity</b></th>
     </tr>
   </thead>
   <tbody>
+  <% @items.each do |item| %>
+      <% if item.item_type=="Evolution_Stone" %>
+          <tr>
+            <td class="col-md-6"><%= image_tag("item/#{item.id}.png")%><%= item.name %></td>
+            <td class="col-md-6"><%= @myitems[item.id - 1].qty %></td>
+          </tr>
+      <% end %>
+  <% end %>
   </tbody>
 </table>
