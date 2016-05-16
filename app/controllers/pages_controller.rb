@@ -30,6 +30,6 @@ class PagesController < ApplicationController
       @team.append(p) if p.pokemon_position == 1 || p.pokemon_position == 2 || p.pokemon_position == 3 || p.pokemon_position == 4 || p.pokemon_position == 5 || p.pokemon_position == 6
     end
 
-    @team.sort_by! { |m| m["pokemon_position"]}
+    @team.sort_by { |m| m["pokemon_position"]}
   end
 end
