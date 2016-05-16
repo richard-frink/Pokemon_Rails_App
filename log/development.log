@@ -53053,3 +53053,238 @@ Processing by TrainersController#index as HTML
   [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 50]]
   Rendered trainers/index.html.erb within layouts/application (0.1ms)
 Completed 200 OK in 121ms (Views: 119.3ms | ActiveRecord: 0.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mSQL (17.7ms)[0m  DELETE FROM "pokemons"
+  [1m[36mSQL (15.9ms)[0m  [1mDELETE FROM "items"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "pokemons" ("id", "name", "type1", "type2", "move1", "move2", "move3", "move4", "hp", "attack", "defense", "specialAttack", "specialDefense", "speed", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 1], ["name", "Bulbasaur"], ["type1", "Grass"], ["type2", "Poison"], ["move1", "Leech Seed"], ["move2", "Vine Whip"], ["move3", "Tackle"], ["move4", "Sleep Powder"], ["hp", 45], ["attack", 49], ["defense", 49], ["specialAttack", 65], ["specialDefense", 65], ["speed", 45], ["created_at", "2016-05-16 00:27:56.400630"], ["updated_at", "2016-05-16 00:27:56.400630"]]
+  [1m[35m (19.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "pokemons" ("id", "name", "type1", "type2", "move1", "move2", "move3", "move4", "hp", "attack", "defense", "specialAttack", "specialDefense", "speed", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["id", 2], ["name", "Ivysaur"], ["type1", "Grass"], ["type2", "Poison"], ["move1", "Vine Whip"], ["move2", "Razor Leaf"], ["move3", "Sleep Powder"], ["move4", "Take Down"], ["hp", 60], ["attack", 62], ["defense", 63], ["specialAttack", 80], ["specialDefense", 80], ["speed", 60], ["created_at", "2016-05-16 00:27:56.425640"], ["updated_at", "2016-05-16 00:27:56.425640"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "pokemons" ("id", "name", "type1", "type2", "move1", "move2", "move3", "move4", "hp", "attack", "defense", "specialAttack", "specialDefense", "speed", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", 3], ["name", "Venusaur"], ["type1", "Grass"], ["type2", "Poison"], ["move1", "Vine Whip"], ["move2", "Solarbeam"], ["move3", "Take Down"], ["move4", "Sleep Powder"], ["hp", 80], ["attack", 82], ["defense", 83], ["specialAttack", 100], ["specialDefense", 100], ["speed", 80], ["created_at", "2016-05-16 00:27:56.443211"], ["updated_at", "2016-05-16 00:27:56.443211"]]
+  [1m[35m (16.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("id", "name", "price", "item_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 1], ["name", "Potion"], ["price", 300], ["item_type", "Medicine"], ["created_at", "2016-05-16 00:27:56.488990"], ["updated_at", "2016-05-16 00:27:56.488990"]]
+  [1m[36m (19.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "items" ("id", "name", "price", "item_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 2], ["name", "Super Potion"], ["price", 600], ["item_type", "Medicine"], ["created_at", "2016-05-16 00:27:56.510917"], ["updated_at", "2016-05-16 00:27:56.510917"]]
+  [1m[35m (15.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "items" ("id", "name", "price", "item_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 3], ["name", "Hyper Potion"], ["price", 1200], ["item_type", "Medicine"], ["created_at", "2016-05-16 00:27:56.527956"], ["updated_at", "2016-05-16 00:27:56.527956"]]
+  [1m[36m (15.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "items" ("id", "name", "price", "item_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 4], ["name", "Max Potion"], ["price", 2100], ["item_type", "Medicine"], ["created_at", "2016-05-16 00:27:56.544995"], ["updated_at", "2016-05-16 00:27:56.544995"]]
+  [1m[35m (15.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "items" ("id", "name", "price", "item_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 5], ["name", "Poke Ball"], ["price", 1000], ["item_type", "Pokeballs"], ["created_at", "2016-05-16 00:27:56.562354"], ["updated_at", "2016-05-16 00:27:56.562354"]]
+  [1m[36m (15.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "items" ("id", "name", "price", "item_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 6], ["name", "Great Ball"], ["price", 2500], ["item_type", "Pokeballs"], ["created_at", "2016-05-16 00:27:56.579188"], ["updated_at", "2016-05-16 00:27:56.579188"]]
+  [1m[35m (16.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "items" ("id", "name", "price", "item_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 7], ["name", "Ultra Ball"], ["price", 5000], ["item_type", "Pokeballs"], ["created_at", "2016-05-16 00:27:56.596514"], ["updated_at", "2016-05-16 00:27:56.596514"]]
+  [1m[36m (16.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "items" ("id", "name", "price", "item_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 8], ["name", "Master Ball"], ["price", 25000], ["item_type", "Pokeballs"], ["created_at", "2016-05-16 00:27:56.614645"], ["updated_at", "2016-05-16 00:27:56.614645"]]
+  [1m[35m (15.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "items" ("id", "name", "price", "item_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 9], ["name", "Leaf Stone"], ["price", 6000], ["item_type", "Evolution_Stone"], ["created_at", "2016-05-16 00:27:56.631886"], ["updated_at", "2016-05-16 00:27:56.631886"]]
+  [1m[36m (15.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "items" ("id", "name", "price", "item_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 10], ["name", "Water Stone"], ["price", 6000], ["item_type", "Evolution_Stone"], ["created_at", "2016-05-16 00:27:56.648744"], ["updated_at", "2016-05-16 00:27:56.648744"]]
+  [1m[35m (15.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "items" ("id", "name", "price", "item_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 11], ["name", "Thunder Stone"], ["price", 6000], ["item_type", "Evolution_Stone"], ["created_at", "2016-05-16 00:27:56.665880"], ["updated_at", "2016-05-16 00:27:56.665880"]]
+  [1m[36m (15.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "items" ("id", "name", "price", "item_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 12], ["name", "Fire Stone"], ["price", 6000], ["item_type", "Evolution_Stone"], ["created_at", "2016-05-16 00:27:56.682811"], ["updated_at", "2016-05-16 00:27:56.682811"]]
+  [1m[35m (15.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "items" ("id", "name", "price", "item_type", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 13], ["name", "Moon Stone"], ["price", 6000], ["item_type", "Evolution_Stone"], ["created_at", "2016-05-16 00:27:56.699780"], ["updated_at", "2016-05-16 00:27:56.699780"]]
+  [1m[36m (15.7ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for ::1 at 2016-05-15 20:28:17 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 3966ms (Views: 3958.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-05-15 20:28:22 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (23.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (116.6ms)
+Completed 200 OK in 282ms (Views: 254.6ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-05-15 20:28:24 -0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/IxLYeNw6PsASTNWSPjM342KUcysTW5FuJgS2z68H5Z2yHZOHD7uC0U25CA6OpANrctqICrBsb2XkqYOf5uiwA==", "user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "test@test.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["current_sign_in_at", "2016-05-16 00:28:24.345352"], ["sign_in_count", 2], ["updated_at", "2016-05-16 00:28:24.346430"], ["id", 50]]
+  [1m[36m (19.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/trainers/index
+Completed 302 Found in 164ms (ActiveRecord: 20.6ms)
+
+
+Started GET "/trainers/index" for ::1 at 2016-05-15 20:28:24 -0400
+Processing by TrainersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 50]]
+  Rendered trainers/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 83ms (Views: 80.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pages/pokemon_team" for ::1 at 2016-05-15 20:28:28 -0400
+Processing by PagesController#pokemon_team as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 50]]
+  [1m[35mTrainersPokemon Load (0.2ms)[0m  SELECT "trainers_pokemons".* FROM "trainers_pokemons" WHERE "trainers_pokemons"."trainer_id" = ?  [["trainer_id", 50]]
+  Rendered pages/pokemon_team.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 94ms (Views: 81.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/front/shiny/3-22df3773b1c63c261fc7424da86bfbba94afbc38bc47aabffca794162a8e6950.png" for ::1 at 2016-05-15 20:28:28 -0400
+
+
+Started GET "/assets/front/shiny/1-e17af2fb7820267fdb53e29eceedbcad49a25c53cc29eaf2b0dd2bf02134ae6a.png" for ::1 at 2016-05-15 20:28:28 -0400
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-05-15 20:28:33 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 50]]
+  [1m[35mPokemon Load (0.2ms)[0m  SELECT "pokemons".* FROM "pokemons"
+  [1m[36mTrainersPokemon Load (0.1ms)[0m  [1mSELECT "trainers_pokemons".* FROM "trainers_pokemons" WHERE "trainers_pokemons"."trainer_id" = ?[0m  [["trainer_id", 50]]
+  Rendered pages/pokedex.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 122ms (Views: 117.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pages/pokedex" for ::1 at 2016-05-15 20:29:06 -0400
+Processing by PagesController#pokedex as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 50]]
+  [1m[36mPokemon Load (0.3ms)[0m  [1mSELECT "pokemons".* FROM "pokemons"[0m
+  [1m[35mTrainersPokemon Load (0.1ms)[0m  SELECT "trainers_pokemons".* FROM "trainers_pokemons" WHERE "trainers_pokemons"."trainer_id" = ?  [["trainer_id", 50]]
+  Rendered pages/pokedex.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 66ms (Views: 63.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.self-b85ec57930a7e57658a355f494c8fca5e2691f1a1ed6bfd67ddfbf962e55a7ac.css?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/trainers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/members.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/scaffolds.self-50afb2bca7c4dba1342f07a17c3ae1051a8c46160dff883f41b9075b868e6f75.css?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/application.self-8a55ab01de9131f2e53cffbb0279567b6faa1c0f5ac2de55228907156e14aa8d.css?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/devise_bootstrap_views_less.self-fbcfc84ffe8c2506067c12062881f41b61ab2575ddcb141e45e30c1e11f0ffe9.css?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/twitter/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/items.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/members.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/trainers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/shaded_ball-835f6ed7b2d1fb21789743fe1d5d820e2081ba25ff0d527bfe2189a8b22c73d0.png" for ::1 at 2016-05-15 20:29:07 -0400
+
+
+Started GET "/assets/normal_ball-3e4ab92ebd6363582f254c5d27c212e6c3647da9d76e3682acf28ecd0cf7677b.png" for ::1 at 2016-05-15 20:29:07 -0400

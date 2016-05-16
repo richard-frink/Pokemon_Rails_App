@@ -25,7 +25,7 @@
       <td>
         <% temp = false %>
         <% @mypokemon.each do |p| %>
-          <%= (temp = true) if (p.pokemon_id == mon.id) && (p.shiny == 0) %>
+          <% (temp = true) if (p.pokemon_id == mon.id) && (p.shiny == 0) %>
         <% end %>
         <% if temp %>
             <%= image_tag("normal_ball.png")%>
@@ -36,7 +36,7 @@
       <td>
         <% temp = false %>
         <% @mypokemon.each do |p| %>
-            <%= (temp = true) if (p.pokemon_id == mon.id) && (p.shiny == 1) %>
+            <% (temp = true) if (p.pokemon_id == mon.id) && (p.shiny == 1) %>
         <% end %>
         <% if temp %>
             <%= image_tag("normal_ball.png")%>
