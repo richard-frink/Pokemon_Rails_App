@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   post 'game/caughtPokemon'
   get 'game/caughtPokemon'
 
+  get 'game/add5Money'
+
   get 'game/trainerTeam'
 
   get 'game/dex'
