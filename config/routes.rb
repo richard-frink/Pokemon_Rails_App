@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   post 'pages/pokemart'
 
   get 'pages/pokemon_team'
+  post 'pages/pokemon_team'
 
   get 'pages/pokemon'
 

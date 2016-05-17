@@ -30,6 +30,8 @@ class PagesController < ApplicationController
   end
 
   def pokemon_team
+    @pokemon = Pokemon.all
+
     @mypokemon = TrainersPokemon.where(trainer_id: current_user.id)
 
     @team = Array.new

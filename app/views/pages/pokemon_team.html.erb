@@ -6,6 +6,10 @@
 <h2>Team</h2>
 <hr>
 
+
+<%= form_tag(:action => 'pokemon_team',) %>
+
+
 <div class="col-md-12">
   <% for i in 1..6 %>
     <p class="col-md-2"><b>Slot <%= i %></b></p>
@@ -13,64 +17,47 @@
 </div>
 
 <div class="col-md-12">
-  <p class="col-md-2">
-    <% if @team[0] != nil %>
-        <% if @team[0].shiny == 0 %>
-          <%= image_tag("front/normal/#{@team[0].pokemon_id}.png") %>
+  <% for i in 0..5 %>
+    <p class="col-md-2">
+      <% if @team[i] != nil %>
+        <% if @team[i].shiny == 0 %>
+          <%= image_tag("front/normal/#{@team[i].pokemon_id}.png") %>
         <% else %>
-          <%= image_tag("front/shiny/#{@team[0].pokemon_id}.png") %>
+          <%= image_tag("front/shiny/#{@team[i].pokemon_id}.png") %>
         <% end %>
-    <% end %>
-  </p>
-  <p class="col-md-2">
-    <% if @team[1] != nil %>
-        <% if @team[1].shiny == 0 %>
-            <%= image_tag("front/normal/#{@team[1].pokemon_id}.png") %>
-        <% else %>
-            <%= image_tag("front/shiny/#{@team[1].pokemon_id}.png") %>
-        <% end %>
-    <% end %>
-  </p>
-  <p class="col-md-2">
-    <% if @team[2] != nil %>
-        <% if @team[2].shiny == 0 %>
-            <%= image_tag("front/normal/#{@team[2].pokemon_id}.png") %>
-        <% else %>
-            <%= image_tag("front/shiny/#{@team[2].pokemon_id}.png") %>
-        <% end %>
-    <% end %>
-  </p>
-  <p class="col-md-2">
-    <% if @team[3] != nil %>
-        <% if @team[3].shiny == 0 %>
-            <%= image_tag("front/normal/#{@team[3].pokemon_id}.png") %>
-        <% else %>
-            <%= image_tag("front/shiny/#{@team[3].pokemon_id}.png") %>
-        <% end %>
-    <% end %>
-  </p>
-  <p class="col-md-2">
-    <% if @team[4] != nil %>
-        <% if @team[4].shiny == 0 %>
-            <%= image_tag("front/normal/#{@team[4].pokemon_id}.png") %>
-        <% else %>
-            <%= image_tag("front/shiny/#{@team[4].pokemon_id}.png") %>
-        <% end %>
-    <% end %>
-  </p>
-  <p class="col-md-2">
-    <% if @team[5] != nil %>
-        <% if @team[5].shiny == 0 %>
-            <%= image_tag("front/normal/#{@team[5].pokemon_id}.png") %>
-        <% else %>
-            <%= image_tag("front/shiny/#{@team[5].pokemon_id}.png") %>
-        <% end %>
-    <% end %>
-  </p>
+          <br> <b><%= @pokemon[@team[i].pokemon_id - 1].name %> <br> Exp: <%= @team[i].exp %></b>
+      <% end %>
+    </p>
+  <% end %>
 </div>
 
+<hr class="col-md-12">
+<h2>Edit Team</h2>
+<hr>
+
+<p class="col-md-12"><b>Select the positions you would like for your pokemon.</b></p>
+<div class="col-md-12">
+  <% for i in 1..6 %>
+      <p class="col-md-2"><b>Slot <%= i %></b></p>
+  <% end %>
+</div>
+
+<div class="col-md-12">
+  <% for i in 0..5 %>
+    <p>
+      <% select_tag "positions", options_from_collection_for_select(@mypokemon, "pokemon_id", "pokemon_position"), include_blank: true %>
+    </p>
+  <% end %>
+</div>
+
+<div class="col-md-12">
+  <%= submit_tag("Save") %>
+</div>
+
+<hr class="col-md-12">
 <h2>All Pokemon</h2>
 <hr>
+
 <% @mypokemon.each do |p| %>
 
     <p class="col-md-2">
@@ -79,6 +66,7 @@
       <% else %>
           <%= image_tag("front/shiny/#{p.pokemon_id}.png") %>
       <% end %>
+      <br> <b><%= @pokemon[p.pokemon_id - 1].name %> <br> Exp: <%= p.exp %></b>
     </p>
 
 <% end %>
