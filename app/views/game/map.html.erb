@@ -157,7 +157,7 @@
       if (xhttp.readyState == 4 && xhttp.status == 200) {
         var temp = JSON.parse(xhttp.responseText);
         myIcon = temp.avatar;
-        tile1.src = "/images/avatar/" + myIcon + ".gif";
+        tile1.src = "/images/avatar_" + myIcon + ".gif";
       }
     };
     xhttp.open("GET", url, true);

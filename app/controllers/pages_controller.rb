@@ -20,7 +20,9 @@ class PagesController < ApplicationController
 
     @items.each do |item|
       if params[item.name].to_i != 0
-        buy_item(Item.find_by(name: item.name).id, params[item.name].to_i)
+        #if params[item.name].to_i > 0
+          buy_item(Item.find_by(name: item.name).id, params[item.name].to_i)
+        #end
       end
     end
   end

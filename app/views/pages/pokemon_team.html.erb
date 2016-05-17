@@ -44,8 +44,12 @@
 
 <div class="col-md-12">
   <% for i in 0..5 %>
-    <p>
-      <% select_tag "positions", options_from_collection_for_select(@mypokemon, "pokemon_id", "pokemon_position"), include_blank: true %>
+    <p class="col-md-2">
+
+<!--
+  ><% select("pokemons", "id", TrainersPokemon.all.pluck(:pokemon_id, :pokemon_position), include_blank: true) %>
+ -->
+
     </p>
   <% end %>
 </div>
