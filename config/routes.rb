@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'game/trainerTeam'
+
+  get 'game/dex'
+
+  get 'game/trainerIcon'
+
+  get 'game/map'
+
   get 'pages/bag'
 
   get 'pages/profile'
@@ -35,7 +43,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
-  get '*path' => redirect('/trainers/index')
+  #get '*path' => redirect('/trainers/index')
 
 
   # Example of regular route:
