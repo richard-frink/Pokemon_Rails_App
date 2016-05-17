@@ -1,0 +1,170 @@
+<%= content_for(:title, "PokeRails | Grass Map") %>
+<h2>Grass Map</h2>
+<p>Use the WASD keys on your keyboard to find a pokemon!</p>
+<div>
+  <canvas id="canvas" width="600" height="471"
+          style="background:rgb(233,233,233); float: left"> FAILED TO CANVAS BRO! Try a diffferent browser or something!
+  </canvas>
+</div>
+<div id="battleDIV" style="float: left; margin-left: 5%; height: 500px; width: 257px; background-repeat: no-repeat"> Loading ...
+  <input id="catchBTN" type="submit" value="Catch" style="visibility: hidden" onclick="catchPokemon()"/>
+</div>
+
+<script>
+
+  var canvas;
+  var ctx;
+
+  var dx = 10;
+  var x = 30;
+  var y = 100;
+
+  var WIDTH = 600 - dx;
+  var HEIGHT = 471 + dx;
+  var tile1 = new Image();
+  var image = new Image();
+
+  var encounter_odds;
+  var pokemon_number;
+
+  var pokemonInPokedex = 71;
+  var myArr;
+  var myIcon;
+  var myTeam;
+  var starterID;
+
+  function catchPokemon() {
+    document.getElementById("catchBTN").style.visibility = "none";
+  }
+  function startBattle() {
+
+    if (myTeam.pokemon_position == 1)
+      starterID = myTeam.pokemon_id;
+    else
+      starterID = 0;
+
+    document.getElementById('battleDIV').innerHTML = "" +
+        "<p><img style='float: right;' src='/images/front/normal/" + (pokemon_number + 1) + ".png'><br/><br/><br/></p>" +
+        "<img src='/images/back/normal/" + (starterID) + ".png'>";
+    document.getElementById('battleDIV').style.backgroundImage = "url('/images/battlescene/scene.png')";
+
+  }
+  function encounterBattle() {
+    document.getElementById('battleDIV').style.backgroundImage = "";
+
+    encounter_odds = Math.floor(Math.random() * 100) + 1;
+
+    if (encounter_odds < 20) { //20% chance to have an encounter
+
+      pokemon_number = Math.floor(Math.random() * pokemonInPokedex) + 1;
+
+      document.getElementById('battleDIV').innerHTML = "A wild " + myArr[pokemon_number].name + " appeared" +
+          "<p><img src='/images/front/normal/" + (pokemon_number + 1) + ".png' /></p>" +
+          "<input type='submit' value='Battle!' onclick='startBattle()'/>";
+
+    } else {
+      document.getElementById('battleDIV').innerHTML = "";
+
+    }
+  }
+
+  function KeyDown(evt) {
+    switch (evt.keyCode) {
+      case 68: /* Arrow right */
+        if (x + dx < WIDTH) {
+          x += dx;
+          encounterBattle();
+        }
+        break;
+
+      case 65: /* Arrow left */
+        if (x - dx > 0) {
+          x -= dx;
+          encounterBattle();
+        }
+        break;
+
+      case 87: /* Arrow top */
+        if (y - dx > 0) {
+          y -= dx;
+          encounterBattle();
+        }
+        break;
+
+      case 83: /* Arrow bottom */
+        if (y + dx < HEIGHT) {
+          y += dx;
+          encounterBattle();
+        }
+        break;
+    }
+  }
+
+
+  function Start() {
+    canvas = document.getElementById("canvas");
+    ctx = canvas.getContext("2d");
+
+    //get Pokemon Data
+    var xmlhttp = new XMLHttpRequest();
+    var url = "http://localhost:3000/game/dex";
+
+    xmlhttp.onreadystatechange = function () {
+      if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        myArr = JSON.parse(xmlhttp.responseText);
+        document.getElementById('battleDIV').innerHTML = "Your adventure awaits! Let's go!";
+      }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+
+    //end Get Avatar Data
+    var xhttp = new XMLHttpRequest();
+    var url = "http://localhost:3000/game/trainerIcon";
+
+    xhttp.onreadystatechange = function () {
+      if (xhttp.readyState == 4 && xhttp.status == 200) {
+        var temp = JSON.parse(xhttp.responseText);
+        myIcon = temp.avatar;
+        tile1.src = "/images/avatar/" + myIcon + ".gif";
+      }
+    };
+    xhttp.open("GET", url, true);
+    xhttp.send();
+    //end Get Avatar Data
+
+    //get user's pokemon team
+    //get Pokemon Data
+    var xh = new XMLHttpRequest();
+    var url = "http://localhost:3000/game/trainerTeam";
+
+    xh.onreadystatechange = function () {
+      if (xh.readyState == 4 && xh.status == 200) {
+        myTeam = JSON.parse(xh.responseText);
+      }
+    };
+    xh.open("GET", url, true);
+    xh.send();
+    //end get team
+    return setInterval(Update, 10);
+  }
+
+  function Draw() {
+    tile1.src = "/images/avatar/" + myIcon + ".gif";
+    ctx.drawImage(tile1, x, y);
+  }
+
+  function LimparTela() {
+
+    image.src = "/images/maps/map3.png";
+    ctx.drawImage(image, 0, 0);
+  }
+
+  function Update() {
+    LimparTela();
+    Draw();
+  }
+
+  window.addEventListener('keydown', KeyDown);
+  Start();
+</script>
